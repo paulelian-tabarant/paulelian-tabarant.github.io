@@ -6754,7 +6754,7 @@ body {
 }
 @media only screen and (max-width: 767px) {
   #left-panel #responsive-profile-picture-adapter {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
   }
   #left-panel #name {
@@ -6776,12 +6776,12 @@ body {
 #left-panel .borderless a {
   color: white;
 }
-@media only screen and (max-height: 720px) {
+@media only screen and (max-height: 600px) {
   #left-panel .circled-profile-picture {
     display: none;
   }
 }
-@media only screen and (max-height: 550px) {
+@media only screen and (max-height: 450px) {
   #left-panel #legend {
     display: none;
   }
