@@ -95,6 +95,14 @@ $(function () {
             }, 500);
         })
     });
+    // collapses navbar when clicked outside
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").click();
+        }
+    });
 
     select(0);
     cursor.blink();
