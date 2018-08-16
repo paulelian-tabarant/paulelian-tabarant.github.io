@@ -93,7 +93,7 @@ $(function () {
                 left: '25%',
                 width: '50%'
             }, 500);
-        })
+        });
     });
     // collapses navbar when clicked outside
     $(document).click(function (event) {
