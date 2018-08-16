@@ -103,8 +103,6 @@ $(function () {
             $("button.navbar-toggle").click();
         }
     });
-
-    select(0);
     cursor.blink();
 });
 
