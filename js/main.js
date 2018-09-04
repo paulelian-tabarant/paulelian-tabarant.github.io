@@ -1,5 +1,6 @@
 var scrollingTime = 200;
 var scrollingOffset = 50;
+var totalProjectsNb = 15; // to be updated each time you add a project
 
 function select(index) {
     var nextSection = $ ( '#section'+index );
@@ -72,13 +73,14 @@ $(function () {
     // Projects list animations
     $( '[id^=item]' ).each(function( index, element ) {
         $( element ).on('show.bs.collapse', function() {
+            var number = totalProjectsNb - index;
             var chevron = $( '#selected-project-chevron' );
             chevron.hide();
-            $( 'a[href="#item'+(index+1)+'"]' ).before( chevron );
+            $( 'a[href="#item'+(number)+'"]' ).before( chevron );
             chevron.show('fast');
             var borderBefore = $( '#selected-project-border-before' );
             var borderAfter = $( '#selected-project-border-after' );
-            var panelBody = $( '#item'+(index+1)+' .panel-body' );
+            var panelBody = $( '#item'+(number)+' .panel-body' );
             borderBefore.prependTo(panelBody);
             borderAfter.appendTo(panelBody);
             borderBefore.css('width', '0px');
