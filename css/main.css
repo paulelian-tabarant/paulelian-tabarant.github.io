@@ -6920,3 +6920,10 @@ body {
 #right-panel .panel-body p {
   margin-top: 0px;
 }
+footer {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 100%;
+  text-align: center;
+  color: #ffab58;
+}
