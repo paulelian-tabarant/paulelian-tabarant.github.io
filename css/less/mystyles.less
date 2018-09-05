@@ -14,7 +14,7 @@ body {
     .circled-profile-picture {
         margin-top: 5 * @default-margin;
         width: 100%;
-        height: auto;
+        height: 100%;
         padding-top: 100%;
         display: block;
         border-radius: 50%;
@@ -24,6 +24,10 @@ body {
         background-position-y: center;
         //reducing resolution
         background-size: cover;
+
+        #email-envelope {
+            font-size: 2.5em;
+        }
     }
 
     @media only screen and (max-width:767px) {
@@ -210,12 +214,4 @@ body {
             margin-top: 0px;
         }
     }
-}
-
-footer {
-    margin-left: 5 * @default-margin;
-    margin-right: 5 * @default-margin;
-    width: 100%;
-    text-align: center;
-    color: @brand-primary;
 }
