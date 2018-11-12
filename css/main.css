@@ -6739,6 +6739,9 @@ body {
 #left-panel {
   position: fixed;
   z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 #left-panel .circled-profile-picture {
   margin-top: 25px;
@@ -6815,10 +6818,6 @@ body {
 #left-panel #sectionsScrollspy a {
   padding-left: 0px;
   padding-right: 0px;
-  display: inline-block;
-  background-color: transparent;
-}
-#left-panel #sectionsScrollspy a:hover {
   background-color: transparent;
 }
 #left-panel #sectionsScrollspy li.active {
@@ -6827,13 +6826,8 @@ body {
   font-size: x-large;
   font-weight: bold;
 }
-#left-panel #sectionsScrollspy li.active a {
-  color: #ffab58;
-  text-decoration: none;
-}
 #right-panel {
   margin-bottom: 80px;
-  padding-right: 60px;
   z-index: 1;
 }
 @media only screen and (max-width: 768px) {
@@ -6914,6 +6908,9 @@ body {
 }
 #right-panel .panel-heading a {
   color: white;
+}
+#right-panel .panel-heading a.last-clicked::before {
+  content: ">> ";
 }
 #right-panel .panel-body {
   padding: 0px 0px;

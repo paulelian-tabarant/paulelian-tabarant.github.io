@@ -10,6 +10,9 @@ body {
 #left-panel {
     position: fixed;
     z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
     
     .circled-profile-picture {
         margin-top: 5 * @default-margin;
@@ -98,10 +101,6 @@ body {
         a {
             padding-left: 0px;
             padding-right: 0px;
-            display: inline-block;
-            background-color: transparent;
-        }
-        a:hover {
             background-color: transparent;
         }
         li.active {
@@ -109,10 +108,6 @@ body {
             background-color: transparent;
             font-size: x-large;
             font-weight: bold;
-            a {
-                color: @brand-primary;
-                text-decoration: none;
-            }
         }
     }
 }
@@ -121,7 +116,6 @@ body {
 
 #right-panel {
     margin-bottom: 16 *@default-margin;
-    padding-right: 5 * @padding-base-horizontal;
     z-index: 1;
     @media only screen and (max-width:768px) {
         padding-left: 5 * @default-margin;
@@ -204,6 +198,10 @@ body {
         a {
             color: white;
         }
+    }
+
+    .panel-heading a.last-clicked::before {
+        content: ">> ";
     }
 
     .panel-body {
