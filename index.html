@@ -43,13 +43,11 @@
             </h1>
             <h3>Engineering student at Télécom ParisTech.</h3>
             <ul class="nav list-group" id="sections-list">
-              <li class="list-group-item borderless active"><a href="#presentation">Presentation</a><span id="terminal-dollar">$</span>
-                <div id="terminal-cursor"></div>
-              </li>
-              <li class="list-group-item borderless"><a href="#experience">Experience</a></li>
-              <li class="list-group-item borderless"><a href="#education">Education</a></li>
-              <li class="list-group-item borderless"><a href="#technical-skills">Skills</a></li>
-              <li class="list-group-item borderless"><a href="#main-projects">Projects</a></li>
+              <a href="#presentation"><li class="list-group-item borderless active">Presentation<span id="terminal-dollar">$</span><div id="terminal-cursor"></div></li></a>
+              <a href="#experience"><li class="list-group-item borderless">Experience</li></a>
+              <a href="#education"><li class="list-group-item borderless">Education</li></a>
+              <a href="#technical-skills"><li class="list-group-item borderless">Skills</li></a>
+              <a href="#main-projects"><li class="list-group-item borderless">Projects</li></a>
             </ul>
           </div>
         </nav>
@@ -59,7 +57,7 @@
         <section id="presentation">
           <h1><span class="glyphicon glyphicon-user"></span>Presentation</h1>
           <p>
-            I define myself as a humble student, who live in the charming 13th
+            I define myself as a humble student, who lives in the charming 13th
             district of Paris. Still attached to my roots of a working-class
             region in South-Eastern France, I am very grateful towards my present situation
             and try to appreciate the meaningful opportunities around me.
@@ -97,7 +95,7 @@
           <section>
             <h3 class="date">July 2017</h3>
             <section class="cv-item">
-              <h4><acronym title="One Laptop Per Child">OLPC</acronym> France</h4>
+              <h4><abbr title="One Laptop Per Child">OLPC</abbr> France</h4>
               <p>Village development assitance in Antitorona, Madagascar. Part of the
                 <a href="http://www.nosykombaproject.org">Nosy Komba Project</a>
               </p>
@@ -140,6 +138,16 @@
 
         <section id="education">
           <h1><span class="glyphicon glyphicon-education"></span>Education</h1>
+            <h3 class="date">Since September 2016</h3>
+            <section class="cv-item">
+              <h4>Télécom ParisTech</h4>
+              <p>
+                Studying Computer Science engineering.
+                Main fields : Human-Computer Interaction, 3D Computer Graphics, Networks &
+                <abbr title="Internet of Things">IoT</abbr>
+              </p>
+            </section>
+          </section>
           <section>
             <h3 class="date">August-December 2018</h3>
             <section class="cv-item">
@@ -178,16 +186,6 @@
             </section>
           </section>
           <section>
-            <h3 class="date">Since 2016</h3>
-            <section class="cv-item">
-              <h4>Télécom ParisTech</h4>
-              <p>
-                Studying Computer Science engineering.
-                Main fields : Human-Computer Interaction, 3D Computer Graphics, Networks &
-                <acronym title="Internet of Things">IoT</acronym>
-              </p>
-            </section>
-          </section>
           <section>
             <h3 class="date">2014-2016</h3>
             <section class="cv-item">
@@ -331,13 +329,11 @@
             Click on a title for more details.
           </p>
 
-          <div id="projects-panelgroup" class="panel-group">
-            <section>
+            <section id="projects-2018" class="panel-group">
               <h3 class="date">2018</h3>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><span id="selected-project-chevron">>></span><a href="#item15" data-parent="#projects-panelgroup"
-                      data-toggle="collapse">Online blog</a></h4>
+                  <h4><a href="#item15" data-parent="#projects-2018" data-toggle="collapse">Online blog</a></h4>
                 </div>
                 <div id="item15" class="panel-collapse collapse in">
 
@@ -355,7 +351,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item14" data-parent="#projects-panelgroup" data-toggle="collapse">Personal website
+                  <h4><a href="#item14" data-parent="#projects-2018" data-toggle="collapse">Personal website
                       development</a></h4>
                 </div>
                 <div id="item14" class="panel-collapse collapse">
@@ -372,7 +368,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item13" data-parent="#projects-panelgroup" data-toggle="collapse" \>European time use
+                  <h4><a href="#item13" data-parent="#projects-2018" data-toggle="collapse">European time use
                       visualization</a></h4>
                 </div>
                 <div id="item13" class="panel-collapse collapse">
@@ -391,7 +387,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item12" data-parent="#projects-panelgroup" data-toggle="collapse">Visible Touch</a></h4>
+                  <h4><a href="#item12" data-parent="#projects-2018" data-toggle="collapse">Visible Touch</a></h4>
                 </div>
                 <div id="item12" class="panel-collapse collapse">
                   <div class="panel-body">
@@ -410,7 +406,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item11" data-parent="#projects-panelgroup" data-toggle="collapse">Interactive
+                  <h4><a href="#item11" data-parent="#projects-2018" data-toggle="collapse">Interactive
                       restaurant menu</a></h4>
                 </div>
                 <div id="item11" class="panel-collapse collapse">
@@ -429,7 +425,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item10" data-parent="#projects-panelgroup" data-toggle="collapse">Setting up a
+                  <h4><a href="#item10" data-parent="#projects-2018" data-toggle="collapse">Setting up a
                       6LowPAN
                       network</a></h4>
                 </div>
@@ -447,11 +443,11 @@
               </section>
             </section>
 
-            <section>
+            <section id="projects-2017" class="panel-group">
               <h3 class="date">2017</h3>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item9" data-parent="#projects-panelgroup" data-toggle="collapse">Bases of 3D
+                  <h4><a href="#item9" data-parent="#projects-2017" data-toggle="collapse">Bases of 3D
                       rendering
                       and geometrical processing</a></h4>
                 </div>
@@ -475,7 +471,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item8" data-parent="#projects-panelgroup" data-toggle="collapse">Enforcement
+                  <h4><a href="#item8" data-parent="#projects-2017" data-toggle="collapse">Enforcement
                       project on
                       images processing</a></h4>
                 </div>
@@ -495,7 +491,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item7" data-parent="#projects-panelgroup" data-toggle="collapse">Writing about
+                  <h4><a href="#item7" data-parent="#projects-2017" data-toggle="collapse">Writing about
                       Eminem...</a></h4>
                 </div>
                 <div id="item7" class="panel-collapse collapse">
@@ -512,11 +508,11 @@
               </section>
             </section>
 
-            <section>
+            <section id="projects-2016" class="panel-group">
               <h3 class="date">2016</h3>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item6" data-parent="#projects-panelgroup" data-toggle="collapse">Last Night</a></h4>
+                  <h4><a href="#item6" data-parent="#projects-2016" data-toggle="collapse">Last Night</a></h4>
                 </div>
                 <div id="item6" class="panel-collapse collapse">
                   <div class="panel-body">
@@ -535,7 +531,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item5" data-parent="#projects-panelgroup" data-toggle="collapse">Soccer game sheets
+                  <h4><a href="#item5" data-parent="#projects-2016" data-toggle="collapse">Soccer game sheets
                       editor</a></h4>
                 </div>
                 <div id="item5" class="panel-collapse collapse">
@@ -553,12 +549,12 @@
               </section>
             </section>
 
-            <section>
+            <section id="projects-2015" class="panel-group">
               <h3 class="date">2015</h3>
 
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item4" data-parent="#projects-panelgroup" data-toggle="collapse">Study of tactile
+                  <h4><a href="#item4" data-parent="#projects-2015" data-toggle="collapse">Study of tactile
                       interfaces</a></h4>
                 </div>
                 <div id="item4" class="panel-collapse collapse">
@@ -576,7 +572,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item3" data-parent="#projects-panelgroup" data-toggle="collapse">Vehicle
+                  <h4><a href="#item3" data-parent="#projects-2015" data-toggle="collapse">Vehicle
                       suspension</a></h4>
                 </div>
                 <div id="item3" class="panel-collapse collapse">
@@ -593,7 +589,7 @@
               </section>
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item2" data-parent="#projects-panelgroup" data-toggle="collapse">Advanced
+                  <h4><a href="#item2" data-parent="#projects-2015" data-toggle="collapse">Advanced
                       calculator</a></h4>
                 </div>
                 <div id="item2" class="panel-collapse collapse">
@@ -612,12 +608,12 @@
               </section>
             </section>
 
-            <section>
+            <section id="projects-2014" class="panel-group">
               <h3 class="date">2014</h3>
 
               <section class="panel">
                 <div class="panel-heading">
-                  <h4><a href="#item1" data-parent="#projects-panelgroup" data-toggle="collapse">Radiation
+                  <h4><a href="#item1" data-parent="#projects-2014" data-toggle="collapse">Radiation
                       level on
                       solar panels</a></h4>
                 </div>
