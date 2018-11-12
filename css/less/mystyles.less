@@ -10,9 +10,6 @@ body {
 #left-panel {
     position: fixed;
     z-index: 2;
-    height: 100%;
-    display: flex;
-    align-items: center;
     
     .circled-profile-picture {
         margin-top: 5 * @default-margin;
@@ -44,6 +41,9 @@ body {
     }
 
     @media only screen and (min-width:767px) {
+        display: flex;
+        align-items: center;
+        height: 100%;
         .navbar {
             border: 0px;
         }
