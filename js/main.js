@@ -9,7 +9,7 @@ function select(index) {
     nextSection.append( dollar );
     dollar.after ( cursor );
     // Gets the link inside the wrapping <a> element
-    updateHash($( 'li.active' ).parent().attr('href'));
+    updateHash($( 'li.active > a' ).attr('href'));
 }
 
 class Cursor {
@@ -47,16 +47,16 @@ var cursor = new Cursor('terminal-cursor', 750, 450);
 
 $(function () {
     // Scrollspy features
-    $( '#sections-list li' ).each(function ( index, element ) {
+    $( '#sections-list li > a' ).each(function ( index, element ) {
         var id = 'section'+index;
         $( element ).attr('id', id);
         // adding a callback function to the list items' link
-        $( element ).parent().click(function(event) { 
+        $( element ).click(function(event) { 
            // inspired of W3S schools example : https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp 
             if(this.hash !== '') {
-                $( "li.active" ).toggleClass("active"); 
-                $( event.target ).toggleClass("active");
                 event.preventDefault();
+                $( "li.active" ).toggleClass("active"); 
+                $( element ).parent().toggleClass("active");
                 var hash = this.hash;
                 offset = $( hash ).offset().top - scrollingOffset;
                 $( 'html, body' ).animate( {
@@ -69,7 +69,7 @@ $(function () {
         });
     });
     $( '#sectionsScrollspy' ).on('activate.bs.scrollspy', function(e) {
-        var id = $( '#sectionsScrollspy li.active' ).attr('id');
+        var id = $( 'li.active > a' ).attr('id');
         var index = parseInt(id.replace('section', ''));
         select(index);
     });

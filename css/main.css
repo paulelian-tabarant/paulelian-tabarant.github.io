@@ -6828,6 +6828,9 @@ body {
   font-size: x-large;
   font-weight: bold;
 }
+#left-panel #sectionsScrollspy li.active a {
+  display: inline;
+}
 #right-panel {
   margin-bottom: 80px;
   z-index: 1;
