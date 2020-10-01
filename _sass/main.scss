@@ -5,6 +5,10 @@
 
 $default-margin: 5px;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	position: relative;
 	color: white;
@@ -75,11 +79,8 @@ h1, h2, h3, h4, h5, h6 {
     
     .borderless {
         border: 0 none;
-        background: none;
-        a {
-            color: white;
-        }
-    }
+		background: none;
+	}
 
     @media only screen and (max-height: 600px) {
         .circled-profile-picture {
@@ -100,37 +101,38 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 
-    #sectionsScrollspy {
-        li {
-            #terminal-dollar {
-                position: relative;
-                color: white;
-                font-weight: bold;
-            }
-            
-            #terminal-cursor {
-                position: relative;
-                display: inline-block;
-                width: 10px;
-                height: 20px;
-                top: 1.5px;
-                margin-left: 10px;
-            }
-        }
-        a {
+    nav {
+        li > a.nav-link {
             padding-left: 0px;
             padding-right: 0px;
-            background-color: transparent;
+			background-color: transparent;
+			color: $secondary;
         }
-        li.active {
+        li > a.nav-link.active {
             padding-left: $default-margin;
             background-color: transparent;
-            font-size: x-large;
             font-weight: bold;
-            a {
-                display: inline;
-            }
+			font-size: x-large;
+			display: inline;
+			color: $primary;
         }
+		li > a.nav-link.active::before {
+			content: ">>"
+		}
+		#terminal-dollar {
+			position: relative;
+			color: white;
+			font-weight: bold;
+		}
+		
+		#terminal-cursor {
+			position: relative;
+			display: inline-block;
+			width: 10px;
+			height: 20px;
+			top: 1.5px;
+			margin-left: 10px;
+		}
     }
 }
 

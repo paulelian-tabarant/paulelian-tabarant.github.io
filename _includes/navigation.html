@@ -4,7 +4,7 @@
 	<span class="navbar-toggler-icon"></span>
 	</button>
 
-	<div class="collapse navbar-collapse show" id="sectionsScrollspy">
+	<div class="collapse navbar-collapse show">
 		<div id="responsive-profile-picture-adapter">
 			<div class="circled-profile-picture">
 				<a href="mailto:paul.tabarant@gmail.com">
@@ -21,10 +21,9 @@
 		<ul class="navbar-nav" id="sections-list">
 			{% for item in site.data.navigation %}
 			<li class="nav-item borderless">
-				<a class="nav-link" href="#{{item.id}}">{{ item.title }}</a>
+				<a class="nav-link" id="nav-link{{forloop.index0}}" href="#{{item.id}}">{{ item.title }}</a>
 			</li>
 			{% endfor %}
-			<span id="terminal-dollar">$</span>
 		</ul>
 	</div>
 </nav>

@@ -1,15 +1,13 @@
-var scrollingTime = 200;
-var scrollingOffset = 50;
 var totalProjectsNb = 15; // to be updated each time you add a project
 
-function select(index) {
-    var nextSection = $ ( '#section'+index );
+function select(id) {
+    var nextItem = $( '#'+id );
     var dollar = $( '#terminal-dollar' );
     var cursor = $( '#terminal-cursor' );
-    nextSection.append( dollar );
+    nextItem.append( dollar );
     dollar.after ( cursor );
     // Gets the link inside the wrapping <a> element
-    updateHash($( 'li.active > a' ).attr('href'));
+    updateHash($( 'li > a.active' ).attr('href'));
 }
 
 class Cursor {
@@ -46,41 +44,14 @@ function updateHash(hash) {
 var cursor = new Cursor('terminal-cursor', 750, 450);
 
 $(function () {
-    // Scrollspy features
-    $( '#sections-list li > a' ).each(function ( index, element ) {
-        var id = 'section'+index;
-        $( element ).attr('id', id);
-        // adding a callback function to the list items' link
-        $( element ).click(function(event) { 
-           // inspired of W3S schools example : https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp 
-            if(this.hash !== '') {
-                event.preventDefault();
-                $( "li.active" ).toggleClass("active"); 
-                $( element ).parent().toggleClass("active");
-                var hash = this.hash;
-                offset = $( hash ).offset().top - scrollingOffset;
-                $( 'html, body' ).animate( {
-                    scrollTop: offset
-                }, scrollingTime, function () {
-                    updateHash(hash);
-                } );
-            }
-            select(index); 
-        });
-    });
-    $( '#sectionsScrollspy' ).on('activate.bs.scrollspy', function(e) {
-        var id = $( 'li.active > a' ).attr('id');
-        var index = parseInt(id.replace('section', ''));
-        select(index);
-    });
     // Projects list animations
-    $( '.panel-heading a' ).click(function(event) {
+    $( '.panel-heading a' ).click((event) => {
         // "last-clicked" class appends a right chevron before the text of the element
         var lastClickedClass = "last-clicked";
         $( '#main-projects' ).find( 'a.'+lastClickedClass ).toggleClass(lastClickedClass);
         $( event.target ).toggleClass(lastClickedClass);
     });
-    $( '[id^=item]' ).each(function( index, element ) {
+    $( '[id^=item]' ).each((index, element) => {
         $( element ).on('show.bs.collapse', function() {
             var number = totalProjectsNb - index;
             var borderBefore = $( '#selected-project-border-before' );
@@ -103,7 +74,7 @@ $(function () {
         });
     });
     // collapses navbar when clicked outside
-    $(document).click(function (event) {
+    $(document).click((event) => {
         var clickover = $(event.target);
         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
         if (_opened === true && !clickover.hasClass("navbar-toggle")) {
