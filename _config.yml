@@ -25,26 +25,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "https://paulelian-tabarant.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
-  experience:
-    order:
-      - pirvi.md
-      - inria.md
-      - oeno.md
-      - olpc.md
-      - actemium.md
-      - cemoi.md
-      - teaching.md
-  education:
-    order:
-      - telecom-end.md
-      - epm.md
-      - polimi.md
-      - epm.md
-      - telecom-start.md
-      - prepa.md
-      - lycee.md
-  projects:
-    sort_by: year
+  - experience
+  - education
+  - projects
 
 sass:
   sass_dir: _sass

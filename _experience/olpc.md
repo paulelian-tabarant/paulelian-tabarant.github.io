@@ -1,4 +1,5 @@
 ---
+date: 01-07-2017
 period: July 2017
 title: Volunteer for OLPC France
 ---

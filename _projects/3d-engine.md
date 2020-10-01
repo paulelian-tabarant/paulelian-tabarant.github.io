@@ -1,4 +1,5 @@
 ---
+date: 01-11-2017
 year: 2017
 title: Bases of processing and rendering of 3D scenes 
 ---

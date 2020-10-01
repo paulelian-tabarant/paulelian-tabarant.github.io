@@ -1,4 +1,5 @@
 ---
+date: 25-08-2018
 year: 2018
 title: Online blog writing
 ---

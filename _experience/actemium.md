@@ -1,4 +1,5 @@
 ---
+date: 01-04-2016
 period: April-July 2016
 title: Technician - Actemium Rhône-Alpes Agro
 ---

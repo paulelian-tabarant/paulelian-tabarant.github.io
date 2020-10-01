@@ -91,7 +91,7 @@
 						</svg>
 						Experience</h1>
 
-					{% for exp in site.experience %}
+					{% for exp in site.experience reversed %}
 					<section>
 						<h2 class="date">{{ exp.period }}</h2>
 						<section>
@@ -111,7 +111,7 @@
 						Education
 					</h1>
 
-					{% for edu in site.education %}
+					{% for edu in site.education reversed %}
 					<h2 class="date">{{ edu.period }}</h2>
 					<section>
 						<h3>{{ edu.title }}</h3>

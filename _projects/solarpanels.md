@@ -1,4 +1,5 @@
 ---
+date: 15-10-2014
 year: 2014
 title: Radiation level on solar panels
 ---

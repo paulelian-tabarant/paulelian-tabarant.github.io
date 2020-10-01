@@ -1,4 +1,5 @@
 ---
+date: 01-01-2019
 period: January-July 2019
 title: Master internship - INRIA Grenoble-Alpes
 ---

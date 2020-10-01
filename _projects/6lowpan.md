@@ -1,4 +1,5 @@
 ---
+date: 01-03-2018
 year: 2018
 title: Setting up a 6LowPAN network
 ---

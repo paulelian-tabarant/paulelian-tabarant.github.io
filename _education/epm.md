@@ -1,4 +1,5 @@
 ---
+date: 25-08-2018
 period: August-December 2018
 title: École Polytechnique Montréal
 ---

@@ -1,4 +1,5 @@
 ---
+date: 01-06-2017
 year: 2017
 title: Enforcement project on images processing
 ---

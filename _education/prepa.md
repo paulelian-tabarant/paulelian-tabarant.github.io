@@ -1,4 +1,5 @@
 ---
+date: 01-09-2014
 period: 2014-2016
 title: Télécom Saint-Étienne
 ---
