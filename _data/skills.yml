@@ -1,0 +1,35 @@
+- name: C/C++
+  level: 7
+
+- name: OpenGL
+  level: 5
+
+- name: Python
+  level: 3
+
+- name: Linux Bash
+  level: 5
+
+- name: LateX/Markdown
+  level: 4
+
+- name: Android
+  level: 3
+
+- name: Java
+  level: 3
+
+- name: JavaScript / jQuery
+  level: 4
+
+- name: CSS/Sass/Less
+  level: 4
+
+- name: Bootstrap
+  level: 4
+
+- name: Angular
+  level: 5
+
+- name: Git
+  level: 6

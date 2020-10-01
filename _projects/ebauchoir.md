@@ -1,0 +1,6 @@
+---
+year: 2020
+title: L'Ébauchoir
+---
+
+Part of a team of two developers (my current team leader and me) on the project l'Ébauchoir (more details at [this url](https://www.experimenta.fr/explorer-par-le-geste/). We assist the artist Pauline De Chalendar on her project combining art and technology. Main features are related to the restitution of a statue in a 3D environment thanks to a Virtual Reality drawing tool. It allows her to draw basic "ribbon-like" lines and shapes thanks to the algorithm implemented during my internship at the INRIA Grenoble-Alpes (see [Experience](#experience) section). For this specific purpose, we add some other features like the possibility to replay the whole drawing process programmatically, or inserting "camouflage" shapes to hide some 3D objects in specific contexts (observer's position and gaze direction). Other tools are needed for the editing process, like the possibility of splitting the drawing into different files to define multiple drawing phases for the final restitution of the scene.

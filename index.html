@@ -1,40 +1,37 @@
+---
+---
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Paul-Elian TABARANT</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body data-spy="scroll" data-target="#sectionsScrollspy" data-offset="300">
   <div class="container-fluid">
     <div class="row">
-      <aside class="col-md-offset-2 col-md-3 col-sm-4 col-xs-12" id="left-panel">
-        <nav class="navbar navbar-inverse">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sectionsScrollspy">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Paul-Elian TABARANT</a>
-          </div>
+      <aside class="col-md-3 offset-md-2 col-sm-4 col-xs-12" id="left-panel">
+        <nav class="navbar navbar-dark">
+					<a class="navbar-brand" href="#">Paul-Elian TABARANT</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sectionsScrollspy">
+					<span class="navbar-toggler-icon"></span>
+					</button>
 
-          <div class="collapse navbar-collapse" id="sectionsScrollspy">
+          <div class="collapse navbar-collapse show" id="sectionsScrollspy">
             <div id="responsive-profile-picture-adapter">
               <div class="circled-profile-picture">
                 <a href="mailto:paul.tabarant@gmail.com">
-                  <span id="email-envelope" class="glyphicon glyphicon-envelope"></span>
+								<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+								</svg>
                 </a>
               </div>
             </div>
@@ -42,28 +39,42 @@
               Paul-Elian TABARANT
             </h1>
             <p>Research engineer in Computer Graphics and Virtual Reality</p>
-            <ul class="nav list-group" id="sections-list">
-              <li class="list-group-item borderless active"><a href="#presentation">Presentation</a><span id="terminal-dollar">$</span>
+            <ul class="navbar-nav" id="sections-list">
+              <li class="nav-item borderless active">
+								<a class="nav-link" href="#presentation">Presentation</a><span id="terminal-dollar">$</span>
                 <div id="terminal-cursor"></div>
               </li>
-              <li class="list-group-item borderless"><a href="#experience">Experience</a></li>
-              <li class="list-group-item borderless"><a href="#education">Education</a></li>
-              <li class="list-group-item borderless"><a href="#technical-skills">Skills</a></li>
-              <li class="list-group-item borderless"><a href="#main-projects">Projects</a></li>
+              <li class="nav-item borderless">
+								<a class="nav-link" href="#experience">Experience</a>
+							</li>
+              <li class="nav-item borderless">
+								<a class="nav-link" href="#education">Education</a>
+							</li>
+              <li class="nav-item borderless">
+								<a class="nav-link" href="#technical-skills">Skills</a>
+							</li>
+              <li class="nav-item borderless">
+								<a class="nav-link" href="#main-projects">Projects</a>
+							</li>
             </ul>
           </div>
         </nav>
       </aside>
 
-      <main class="col-sm-offset-4 col-md-offset-5 col-sm-8 col-md-5" id="right-panel">
+      <main class="col-sm-8 offset-sm-4 col-md-5 offset-md-5" id="right-panel">
+
         <section id="presentation">
-          <h1><span class="glyphicon glyphicon-user"></span>Presentation</h1>
+          <h1>
+						<svg viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+						</svg>
+						 Presentation</h1>
           <p>
             You've probably come to the right place if you want to meet a dedicated developer. I am currently working on 3D graphics projects with my current team in Lille (<a href="http://cristal.univ-lille.fr/pirvi/pages/presentation/">PIRVI</a>), mainly on our multi-purpose application and 3D engine VAirDraw.
           </p>
           <figure>
             <div class="img-border"></div>
-            <img class="img-responsive" src="img/hellville.jpg">
+            <img class="img-responsive" src="assets/img/hellville.jpg">
             <div class="img-border"></div>
           </figure>
           <p>
@@ -73,260 +84,65 @@
         </section>
 
         <section id="experience">
-          <h1><span class="glyphicon glyphicon-briefcase"></span>Experience</h1>
-          <section>
-            <h2 class="date">Since October 2019</h2>
-            <section class="cv-item">
-              <h3>Research engineer - PIRVI</h3>
-              <p>
-                Pôle Interaction, Réalité Virtuelle et Images, belonging to the CRIStAL lab (Lille university). Part of a team of 6 developers working on Virtual Reality projects. The team deals with several public collaborations with researchers, artists, and museums. We work closely on defining the right technology for each project and developing tailor-made 3D applications, such as exploration of ancient graves with VR headsets or navigation between different floors of a building, whose model is projected on a table, thanks to hand tracking systems. More details can be found on the <a href="http://cristal.univ-lille.fr/pirvi/pages/presentation/">team website</a>.
-              </p>
-            </section>
-          </section>
-          <section>
-            <h2 class="date">January-July 2019</h2>
-            <section class="cv-item">
-              <h3>Master internship - INRIA Grenoble-Alpes</h3>
-              <p>3D Sketching in Virtual Reality. Project proposed by the 
-                <a href="https://team.inria.fr/imagine/">IMAGINE</a> team, about 
-                using user sketching data generated inside a VR environment (HTC Vive)
-                in order to compute and render appropriated surfaces from the original 
-                sketches. 
-              </p>
-              <img src="img/drawing-results.png" alt="Rendered results of sketching sessions">
-              <p>
-                It implies mesh generation techniques relying on a
-                least-squares approximation of positions and controller orientations,
-                as well as considerations about the initial intent
-                of the user depicted by his gestures. Surface plausibility with respect to human perception of shapes drawn 
-                from raw strokes is also a key point for assessing the efficiency of such a solution.
-              </p>
-            </section>
-          </section>
+          <h1>
+						<svg viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+							<path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+						</svg>
+						Experience</h1>
 
-          <section>
-            <h2 class="date">Since 2015</h2>
-            <section class="cv-item">
-              <h3>Private tutor for exceptional students</h3>
-              <p>
-                Mathematics for 6th, 10th and 11th high school grades.
-              </p>
-            </section>
-          </section>
+					{% for exp in site.experience %}
+					<section>
+						<h2 class="date">{{ exp.period }}</h2>
+						<section>
+							<h3>{{ exp.title }}</h3>
+							{{ exp.content }}
+						</section>
+					</section>
+					{% endfor %}
 
-          <section>
-            <h2 class="date">2017-2018</h2>
-            <section class="cv-item">
-              <h3>Sports Office - Télécom ParisTech</h3>
-              <p>Responsible of tournaments organization.</p>
-            </section>
-            <section class="cv-item">
-              <h3>Wine Analysis club - Télécom ParisTech</h3>
-              <p>Assisting in organizing wine and beer tastings.</p>
-            </section>
-          </section>
-
-          <section>
-            <h2 class="date">July 2017</h2>
-            <section class="cv-item">
-              <h3>Volunteer - <abbr title="One Laptop Per Child">OLPC</abbr> France</h3>
-              <p>Village development assitance in Antitorona, Madagascar. Part of the
-                <a href="http://www.nosykombaproject.org">Nosy Komba Project</a>.
-              </p>
-            </section>
-          </section>
-
-          <section>
-            <h2 class="date">April-July 2016</h2>
-            <section class="cv-item">
-              <h3>Developer - Actemium Rhône-Alpes Agro</h3>
-              <p>
-                Internship in the domain of industrial automatism, followed by a
-                temporary summer contract. Development of a supervision software for
-                a glass sorting factory.
-              </p>
-            </section>
-          </section>
-
-          <section>
-            <h2 class="date">July-August 2015</h2>
-            <section class="cv-item">
-              <h3>Production operator - CÉMOI Confiseur</h3>
-              <p>
-                Summer contract in a chocolate factory supplying most of the
-                main french supermarket firms.
-              </p>
-            </section>
-          </section>
         </section>
 
         <section id="education">
-          <h1><span class="glyphicon glyphicon-education"></span>Education</h1>
+          <h1>
+						<svg viewBox="0 0 16 16" class="bi bi-book-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M8.5 2.687v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+						</svg>
+						Education
+					</h1>
 
-          <h2 class="date">July 2019</h2>
-          <section class="cv-item">
-            <h3>Graduated from Télécom Paris</h3>
-            <p>
-              Main fields : Human-Computer Interaction, 3D Computer Graphics, Networks &
-              <abbr title="Internet of Things">IoT</abbr>.
-            </p>
-          </section>
+					{% for edu in site.education %}
+					<h2 class="date">{{ edu.period }}</h2>
+					<section>
+						<h3>{{ edu.title }}</h3>
+						{{ edu.content }}
+					</section>
+					{% endfor %}
 
-          <h2 class="date">August-December 2018</h2>
-          <section class="cv-item">
-            <h3>École Polytechnique Montréal</h3>
-            <p>
-              Exchange program with Télécom ParisTech. 3D computation from
-              medical scans, website conception, cybersecurity & physics for Media
-              applications.
-            </p>
-          </section>
-
-          <h2 class="date">August 2018</h2>
-          <section>
-            <section class="cv-item">
-              <h3>July 2018: HSE Moscow Summer University</h3>
-              <p>
-                Introduction to Artificial Intelligence : Methods, Models, Algorithms.
-              </p>
-            </section>
-          </section>
-
-          <h2 class="date">March 2018</h2>
-          <section class="cv-item">
-            <h3>Politecnico di Milano</h3>
-            <p>
-              Using the Geographical Information Systems (GIS) for the quantitative and qualitative
-              landscape analysis.
-            </p>
-          </section>
-
-          <h2 class="date">November 2017</h2>
-          <section class="cv-item">
-            <h3>Universidad Politecnica de Madrid</h3>
-            <p>
-              Physical computing based on Open Software and Hardware Platforms.
-            </p>
-          </section>
-
-          <h2 class="date">September 2016</h2>
-          <section class="cv-item">
-            <h3>Student at Télécom Paris</h3>
-            <p>
-              Computer Science engineering. Joined from the parallel admission process.
-            </p>
-          </section>
-
-          <h2 class="date">2014 - 2016</h2>
-          <section class="cv-item">
-            <h3>Télécom Saint-Etienne</h3>
-            <p>
-              Higher National Diploma for studies in all the fields of ICT, Physics, Maths,
-              Electrity and Informatics bases for engineering.
-            </p>
-          </section>
-
-          <h2 class="date">2012 - 2014</h2>
-          <section class="cv-item">
-            <h3>French scientific A-Level</h3>
-            <p>
-              Georges Brassens high-school, close to my hometown
-            </p>
-          </section>
         </section>
 
         <section id="technical-skills">
-          <h1><span class="glyphicon glyphicon-wrench"></span>Technical skills</h1>
+          <h1>
+						<svg viewBox="0 0 16 16" class="bi bi-braces" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+						</svg>
+						Technical skills
+					</h1>
           <p>My skills profile is between software interfaces and scientific
             knowledge (physics, mathematics) in modeling and rendering for
             computer graphics. I have also been involved in web interfaces programming,
             sometimes using well-known industry frameworks.
           </p>
-          <br>
-
-          <section class="cv-item">
-            <h2>C/C++</h2>
-            <div class="progress">
-              <div class="progress-bar v7" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>OpenGL</h2>
-            <div class="progress">
-              <div class="progress-bar v5" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Python</h2>
-            <div class="progress">
-              <div class="progress-bar v5" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Linux Bash</h2>
-            <div class="progress">
-              <div class="progress-bar v5" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>LateX/Markdown</h2>
-            <div class="progress">
-              <div class="progress-bar v4" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Android</h2>
-            <div class="progress">
-              <div class="progress-bar v3" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Java</h2>
-            <div class="progress">
-              <div class="progress-bar v3" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>JavaScript / jQuery</h2>
-            <div class="progress">
-              <div class="progress-bar v4" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>CSS/LESS</h2>
-            <div class="progress">
-              <div class="progress-bar v4" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Bootstrap</h2>
-            <div class="progress">
-              <div class="progress-bar v4" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Angular</h2>
-            <div class="progress">
-              <div class="progress-bar v5" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
-
-          <section class="cv-item">
-            <h2>Git</h2>
-            <div class="progress">
-              <div class="progress-bar v6" role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="7"></div>
-            </div>
-          </section>
+					<br>
+					
+					{% for skill in site.data.skills %}
+					<section class="skill-item">
+						<h2>{{ skill.name }}</h2>
+						<div class="progress">
+							<div class="progress-bar v{{ skill.level }}" role="progressbar" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="7"></div>
+						</div>
+					</section>
+					{% endfor %}
 
           <p>
             This is just a quick overview. Feel free to ask me
@@ -336,396 +152,25 @@
         </section>
 
         <section id="main-projects">
-          <h1><span class="glyphicon glyphicon-folder-open"></span>Main projects</h1>
+          <h1>
+						<svg viewBox="0 0 16 16" class="bi bi-cpu-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5A1.5 1.5 0 0 0 5 6.5v3A1.5 1.5 0 0 0 6.5 11h3A1.5 1.5 0 0 0 11 9.5v-3A1.5 1.5 0 0 0 9.5 5h-3zm0 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+						</svg>
+						Main projects
+					</h1>
           <p>
             These are mainly school and personal projects. Click on a project title for more details.
           </p>
-          <section id="projects-2020" class="panel-group">
-            <h2 class="date">2020</h2>
 
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item19" data-parent="#projects-2020" data-toggle="collapse">L'Ébauchoir</a></h3>
-              </div>
-              <div id="item19" class="panel-collapse collapse in">
-            <div class="panel-body">
-                <div class="img-border" id="selected-project-border-before"></div>
-                <p>
-              Part of a team of two developers (my current team leader and me) on the project l'Ébauchoir (more details at <a href="https://www.experimenta.fr/explorer-par-le-geste/">this link</a>). We assist the artist Pauline De Chalendar on her project combining art and technology. Main features are related to the restitution of a statue in a 3D environment thanks to a Virtual Reality drawing tool. It allows her to draw basic "ribbon-like" lines and shapes thanks to the algorithm implemented during my internship at the INRIA Grenoble-Alpes (see <a href="#experience">Experience</a> section). For this specific purpose, we add some other features like the possibility to replay the whole drawing process programmatically, or inserting "camouflage" shapes to hide some 3D objects in specific contexts (observer's position and gaze direction). Other tools are needed for the editing process, like the possibility of splitting the drawing into different files to define multiple drawing phases for the final restitution of the scene.
-                </p>
-                <div class="img-border" id="selected-project-border-after"></div>
-            </div>
-              </div>
-            </section>
+					{% for project in site.projects reversed %}
+					<section class="project-item">
+						<h3><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+						<div id="item{{forloop.index0}}" class="collapse">
+							{{ project.content }}
+						</div>
+					</section>
+					{% endfor %}
 
-
-          </section>
-
-          <section id="projects-2019" class="panel-group">
-            <h2 class="date">2019</h2>
-
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item18" data-parent="#projects-2019" data-toggle="collapse">Museomatch</a></h3>
-              </div>
-              <div id="item18" class="panel-collapse collapse">
-            <div class="panel-body">
-                <div class="img-border" id="selected-project-border-before"></div>
-                <p>
-              Concept prototype set up during the Museomix2020 event, a hackathon hosted in "La Chartreuse de Douai" fine art museum, during which several teams worked on new ideas to highlight the museum's collection thanks to novel devices. Ours, Museomatch, aims at facilitating communication between the outside garden plants and inside's paintings by making an association game. It follows the concept of dating applications, but gives information about common points between a given plant and the painting when the association has been found successfully by the visitor. The game is hosted at a URL through a Ionic web application, used within an Angular framework. More details about the project can be found at <a href="https://www.museomix.org/editions/2019/musee-de-la-chartreuse-douai/prototypes/museomatch">this link</a>.
-                </p>
-                <div class="img-border" id="selected-project-border-after"></div>
-            </div>
-              </div>
-            </section>
-
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item17" data-parent="#projects-2019" data-toggle="collapse">Photos hosting server and viewer</a></h3>
-              </div>
-              <div id="item17" class="panel-collapse collapse">
-            <div class="panel-body">
-                <div class="img-border" id="selected-project-border-before"></div>
-                <p>
-              Apache server with php API, communicating with a mySQL database to retrieve album names and data from user accounts. Access to user accounts is made through an Angular web front-end displaying basic login prompts. The web client also contains pages to edit album names, photos and descriptions as well as a "view mode" in order to just load pictures from an album and let them be displayed automatically. Source code available at this <a href="https://github.com/paulelian-tabarant/my-browser-photo-frame">repository url</a>.
-                </p>
-                <div class="img-border" id="selected-project-border-after"></div>
-            </div>
-              </div>
-            </section>
-
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item16" data-parent="#projects-2019" data-toggle="collapse">Online blog writing</a></h3>
-              </div>
-              <div id="item16" class="panel-collapse collapse">
-
-                <div class="panel-body">
-                  <div class="img-border" id="selected-project-border-before"></div>
-                  <p>
-                    A personal blog dedicated to writing articles about my way of life
-                    and various trips abroad, as well as sharing news with friends and
-                    family (in french). You can read some articles by following <a href="https://paulelian.silvrback.com">
-                      this link</a>.
-                  </p>
-                  <div class="img-border" id="selected-project-border-after"></div>
-                </div>
-              </div>
-            </section>
-
-          </section>
-
-          <section id="projects-2018" class="panel-group">
-            <h2 class="date">2018</h2>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item15" data-parent="#projects-2018" data-toggle="collapse">3D reconstruction from medical scans</a></h3>
-              </div>
-              <div id="item15" class="panel-collapse collapse">
-
-                <div class="panel-body">
-                  <div class="img-border" id="selected-project-border-before"></div>
-                  <p>
-                    I wrote a 
-                    <a href="pdf/Rapport_GBM6700.pdf">literature review</a> 
-                    about the problem of computing a 3D spine model from current
-                    ultrasound imaging techniques. It spans all the steps, starting from the physical 
-                    foundations which ultrasound probes scanning systems rely on. A particular interest is then
-                    given to generating a voxel grid from a set of 2D scans, and finally modeling a meshed closed surface 
-                    thanks to the 
-                    <a href="http://users.polytech.unice.fr/~lingrand/MarchingCubes/algo.html">Marching Cubes</a> 
-                    algorithm.
-                  </p>
-                  <div class="img-border" id="selected-project-border-after"></div>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item14" data-parent="#projects-2018" data-toggle="collapse">Personal website
-                    development</a></h3>
-              </div>
-              <div id="item14" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    I started engaging in learning a bit more about front-end web
-                    development during this summer, while taking the opportunity to
-                    make my own personal resume webpage. Styling has been done thanks to
-                    the Bootstrap.css framework as well as the LESS stylesheet language.
-                    Javascript part uses jQuery.js.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item13" data-parent="#projects-2018" data-toggle="collapse">European time use
-                    visualization</a></h3>
-              </div>
-              <div id="item13" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A user-friendly data visualization webpage showing the average
-                    amount of time spent by European citizens on different common
-                    activities like sleeping, household care or reading. Based on data
-                    from <a href="http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=tus_00week&lang=en">
-                      Eurostat</a>, and using D3.js. You can have more details on the features
-                    <a href="pdf/igr204-poster.pdf">here</a>
-                    , or even <a href="http://www.zhufangda.com/IGR204_Visualization/#">try it</a> directly.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item12" data-parent="#projects-2018" data-toggle="collapse">Visible Touch</a></h3>
-              </div>
-              <div id="item12" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    Development of a system responsible of prototyping frame animations on wearable
-                    LED devices. The ultimate goal is to design animations communicating emotions
-                    or feelings, like a shockwave for example, by a meaningful GIF-like animation on
-                    a LED matrix. We developped a web application based on React.js in order to
-                    design frames. The animation is then transferred via USB to an Arduino UNO chip,
-                    connected to the LED device.<br>
-                    Check our <a href="https://github.com/paulelian-tabarant/visible_touch">source code</a>
-                    or get more details from <a href="pdf/igr205-presentation.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item11" data-parent="#projects-2018" data-toggle="collapse">Interactive
-                    restaurant menu</a></h3>
-              </div>
-              <div id="item11" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A tablet interface showing a restaurant menu and letting customers order their
-                    menu easily. Running on Android OS, and based on a Google Firebase database.
-                    Connected to a PC client (Qt-based) for the restaurant workers, letting them manage the
-                    commands and edit the menu. My personal role was to design and implement the
-                    menus interface on tablets.
-                    <a href="https://github.com/BolongZHANG/IGR203_CarteRestau">Github repository</a>,
-                    and <a href="pdf/igr203-screenshots.pdf">interface screenshots</a>
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item10" data-parent="#projects-2018" data-toggle="collapse">Setting up a
-                    6LowPAN
-                    network</a></h3>
-              </div>
-              <div id="item10" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    An implementation of a CoAP protocol-based network, thanks to the experiments
-                    platform <a href="https://www.iot-lab.info">FIT IOT-LAB</a>. This platforms allows
-                    to upload C programs on mobile devices and allows to install the Contiki OS among others
-                    to control their sensors. I tried to set up a prototype of public works wireless
-                    traffic lights. More details <a href="pdf/fit-iot-lab.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </section>
-
-          <section id="projects-2017" class="panel-group">
-            <h2 class="date">2017</h2>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item9" data-parent="#projects-2017" data-toggle="collapse">Bases of 3D
-                    rendering
-                    and geometrical processing</a></h3>
-              </div>
-              <div id="item9" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    An application window based on the OpenGL C++ library. Takes a 3D mesh as input
-                    and loads several lightning, one shadow and one ambient occlusion (using BVH acceleration)
-                    models.
-                    Lighting is computed from the fragment shader.
-                    Also lets the user apply basic filters (laplacian) and subdivision schemes on the
-                    current mesh.<br>
-                    You can try it downloading <a href="http://mediafire.com/file/8fsoyzpsa77l9iq/IGR202_paul-elian_tabarant.zip">this
-                      folder</a>
-                    and running <i>make</i> and <i>./main models/'your_mesh'.off</i> from the root folder on
-                    Linux.<br>
-                    See my <a href="pdf/igr202-screenshots.pdf">most beautiful screenshots</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item8" data-parent="#projects-2017" data-toggle="collapse">Enforcement
-                    project on
-                    images processing</a></h3>
-              </div>
-              <div id="item8" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A Python program aiming at detecting and reading characters from plane analog
-                    cockpit screens. This would further be used for semantic compression of
-                    video records from these screens in order to operate real-time transfer
-                    to the ground. Our work was to locate letters or symbols, and output a list
-                    of boxes precisely delimiting each symbol. This would be later used by
-                    a PhD student's neuronal network responsible of recognizing each character.
-                    More details <a href="pdf/paf-poster.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item7" data-parent="#projects-2017" data-toggle="collapse">Writing about
-                    Eminem</a></h3>
-              </div>
-              <div id="item7" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    An academic individual writing project, in which I tried to emphasize on the
-                    ills of the US society through the famous rapper Eminem. As a fan of Eminem, what
-                    motivated me about choosing this project was the variety of themes mentioned in
-                    his music and, of course, all his related controversies and public appearances.
-                    This work can be downloaded as PDF <a href="pdf/pace_eminem.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </section>
-
-          <section id="projects-2016" class="panel-group">
-            <h2 class="date">2016</h2>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item6" data-parent="#projects-2016" data-toggle="collapse">Last Night</a></h3>
-              </div>
-              <div id="item6" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    An online social platform for parties. Party organizers (bars, nightclubs)
-                    generate a QR code containing the name of the party. Participants scan it at the
-                    entry, and are then able to communicate with the DJ and organizers through polls
-                    or information messages. I was responsible of developing the mobile application,
-                    tracking participants' moves thanks to the phone accelerometer in order to
-                    determine an experimental "quality mark" of their dance, and generating a recap
-                    with pictures and dancing activity over time.<br>
-                    More details <a href="pdf/last-night.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item5" data-parent="#projects-2016" data-toggle="collapse">Soccer game sheets
-                    editor</a></h3>
-              </div>
-              <div id="item5" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A C# Windows application, letting the user set up all the data of a soccer match.
-                    During the match, you can record efficiently all the key facts. Then, the software
-                    generates a full recap of the match into an Excel file automatically.
-                    You can download the <a href="http://mediafire.com/file/6azwy1ryozs9lr8/Logiciel_fdm.rar">source
-                      code</a> or see more details on the project
-                    <a href="pdf/projetcsharp-presentation.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </section>
-
-          <section id="projects-2015" class="panel-group">
-            <h2 class="date">2015</h2>
-
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item4" data-parent="#projects-2015" data-toggle="collapse">Study of tactile
-                    interfaces</a></h3>
-              </div>
-              <div id="item4" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A documentary research on the main existing tactile technologies in order to
-                    get a touch position or track finger movements on a particular support. This was
-                    completed by an implementation of a basic mp3 player on a <a href="https://www.4dsystems.com.au/product/uLCD_32PTU/">LCD
-                      device</a>
-                    with a specific firmware and programming language.<br>
-                    Feel free to download our <a href="pdf/tipe-rapport.pdf">report</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item3" data-parent="#projects-2015" data-toggle="collapse">Vehicle
-                    suspension</a></h3>
-              </div>
-              <div id="item3" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A study of the physical mechanic phenomenons involved in the operation of a car
-                    suspension. Basically using differential equations from a simplified system
-                    composed of a spring with a given stiffness. In order to show the role of the
-                    shock absorber, friction forces are considered as a second step.<br>
-                    The full report of this study is available <a href="pdf/projet-physique.pdf">here</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item2" data-parent="#projects-2015" data-toggle="collapse">Advanced
-                    calculator</a></h3>
-              </div>
-              <div id="item2" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A C console program capable of computing operations on integers larger than 64 bits.
-                    In order to achieve this, integers are given to the program as string characters to
-                    the program, which then stores them as an array of 32 bits integers. In fact, we
-                    operate
-                    in a 2<sup>32</sup> basis. My group was specifically responsible of this conversion, as
-                    well as giving the result back as a string character on the display.<br>
-                    More details on the project can be found in <a href="pdf/projet-crypto.pdf">this PDF</a>
-                  </p>
-                </div>
-              </div>
-            </section>
-          </section>
-
-          <section id="projects-2014" class="panel-group">
-            <h2 class="date">2014</h2>
-
-            <section class="panel">
-              <div class="panel-heading">
-                <h3><a href="#item1" data-parent="#projects-2014" data-toggle="collapse">Radiation
-                    level on
-                    solar panels</a></h3>
-              </div>
-              <div id="item1" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <p>
-                    A project involving my whole class group (28 students). The final goal was to
-                    create a console C++ program taking all the main solar panel parameters considered
-                    in <a href="pdf/projet-solaire.pdf">this document</a>, and computing an estimation of
-                    the
-                    potential solar radiation
-                    level on this panel. As a manager, I was responsible of the functional breakdown
-                    of the program development, and then dispatching the different parts to the other
-                    students.<br>
-                    Feel free to download the whole report from <a href="pdf/projet-solaire.pdf">this
-                      link</a>.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </section>
         </section>
       </main>
     </div>
@@ -734,17 +179,9 @@
   <!-- Scripts below -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

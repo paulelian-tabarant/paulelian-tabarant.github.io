@@ -1,0 +1,25 @@
+// Bootstrap's default CSS sheets overridden here
+$primary:         #fdb56d; 
+$secondary:		  #ffffff;
+
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:              black;
+
+//** Global textual link color.
+$link-color:            $primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
+$font-family-sans-serif:  "Inconsolata", monospace;
+$font-family-serif:       "Source Serif Pro", serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+// Navbar bootstrap overrides
+$navbar-dark-color:                 black;
+$navbar-dark-active-color:          $primary;
