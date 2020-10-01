@@ -1,187 +1,92 @@
 ---
+layout: main 
 ---
-<!doctype html>
-<html class="no-js" lang="en">
+<section id="presentation">
+	<h1>
+		<svg viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+		</svg>
+			Presentation
+		</h1>
+		{% include_relative _site/presentation.html %}
+</section>
 
-<head>
-  <meta charset="utf-8">
-  <title>Paul-Elian TABARANT</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<section id="experience">
+	<h1>
+		<svg viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+			<path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+		</svg>
+		Experience</h1>
 
-  <link rel="manifest" href="site.webmanifest">
-  <!-- Place favicon.ico in the root directory -->
+	{% for exp in site.experience reversed %}
+	<section>
+		<h2 class="date">{{ exp.period }}</h2>
+		<section>
+			<h3>{{ exp.title }}</h3>
+			{{ exp.content }}
+		</section>
+	</section>
+	{% endfor %}
+</section>
 
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+<section id="education">
+	<h1>
+		<svg viewBox="0 0 16 16" class="bi bi-book-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M8.5 2.687v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+		</svg>
+		Education
+	</h1>
 
-<body data-spy="scroll" data-target="#sectionsScrollspy" data-offset="300">
-  <div class="container-fluid">
-    <div class="row">
-      <aside class="col-md-3 offset-md-2 col-sm-4 col-xs-12" id="left-panel">
-        <nav class="navbar navbar-dark">
-					<a class="navbar-brand" href="#">Paul-Elian TABARANT</a>
-					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sectionsScrollspy">
-					<span class="navbar-toggler-icon"></span>
-					</button>
+	{% for edu in site.education reversed %}
+	<h2 class="date">{{ edu.period }}</h2>
+	<section>
+		<h3>{{ edu.title }}</h3>
+		{{ edu.content }}
+	</section>
+	{% endfor %}
+</section>
 
-          <div class="collapse navbar-collapse show" id="sectionsScrollspy">
-            <div id="responsive-profile-picture-adapter">
-              <div class="circled-profile-picture">
-                <a href="mailto:paul.tabarant@gmail.com">
-								<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-								</svg>
-                </a>
-              </div>
-            </div>
-            <h1 id="name">
-              Paul-Elian TABARANT
-            </h1>
-            <p>Research engineer in Computer Graphics and Virtual Reality</p>
-            <ul class="navbar-nav" id="sections-list">
-              <li class="nav-item borderless active">
-								<a class="nav-link" href="#presentation">Presentation</a><span id="terminal-dollar">$</span>
-                <div id="terminal-cursor"></div>
-              </li>
-              <li class="nav-item borderless">
-								<a class="nav-link" href="#experience">Experience</a>
-							</li>
-              <li class="nav-item borderless">
-								<a class="nav-link" href="#education">Education</a>
-							</li>
-              <li class="nav-item borderless">
-								<a class="nav-link" href="#technical-skills">Skills</a>
-							</li>
-              <li class="nav-item borderless">
-								<a class="nav-link" href="#main-projects">Projects</a>
-							</li>
-            </ul>
-          </div>
-        </nav>
-      </aside>
+<section id="skills">
+	<h1>
+		<svg viewBox="0 0 16 16" class="bi bi-braces" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+		</svg>
+		Technical skills
+	</h1>
+	<p>
+		My skills profile is between software interfaces and scientific knowledge (physics, mathematics) in modeling and rendering for computer graphics. I have also been involved in web interfaces programming, sometimes using well-known industry frameworks.
+	</p>
+	{% for skill in site.data.skills %}
+	<section class="skill-item">
+		<h2>{{ skill.name }}</h2>
+		<div class="progress">
+			<div class="progress-bar v{{ skill.level }}" role="progressbar" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="7"></div>
+		</div>
+	</section>
+	{% endfor %}
+	<p>
+		This is just a quick overview. Feel free to ask me for more details about any of these assets.
+	</p>
+</section>
 
-      <main class="col-sm-8 offset-sm-4 col-md-5 offset-md-5" id="right-panel">
+<section id="projects">
+	<h1>
+		<svg viewBox="0 0 16 16" class="bi bi-cpu-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5A1.5 1.5 0 0 0 5 6.5v3A1.5 1.5 0 0 0 6.5 11h3A1.5 1.5 0 0 0 11 9.5v-3A1.5 1.5 0 0 0 9.5 5h-3zm0 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+		</svg>
+		Main projects
+	</h1>
+	<p>
+		These are mainly school and personal projects. Click on a project title for more details.
+	</p>
 
-        <section id="presentation">
-          <h1>
-						<svg viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-						</svg>
-						 Presentation</h1>
-          <p>
-            You've probably come to the right place if you want to meet a dedicated developer. I am currently working on 3D graphics projects with my current team in Lille (<a href="http://cristal.univ-lille.fr/pirvi/pages/presentation/">PIRVI</a>), mainly on our multi-purpose application and 3D engine VAirDraw.
-          </p>
-          <figure>
-            <div class="img-border"></div>
-            <img class="img-responsive" src="assets/img/hellville.jpg">
-            <div class="img-border"></div>
-          </figure>
-          <p>
-            Still attached to my roots of a working-class region in South-Eastern France near Saint-Etienne, I am very grateful towards my present situation. What drives my daily life in computer science is the diversity of tools and languages, as well as the huge community maintaining an almost inexhaustible amount of available resources to use and learn about.
-          </p>
-
-        </section>
-
-        <section id="experience">
-          <h1>
-						<svg viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
-							<path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
-						</svg>
-						Experience</h1>
-
-					{% for exp in site.experience reversed %}
-					<section>
-						<h2 class="date">{{ exp.period }}</h2>
-						<section>
-							<h3>{{ exp.title }}</h3>
-							{{ exp.content }}
-						</section>
-					</section>
-					{% endfor %}
-
-        </section>
-
-        <section id="education">
-          <h1>
-						<svg viewBox="0 0 16 16" class="bi bi-book-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" d="M8.5 2.687v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-						</svg>
-						Education
-					</h1>
-
-					{% for edu in site.education reversed %}
-					<h2 class="date">{{ edu.period }}</h2>
-					<section>
-						<h3>{{ edu.title }}</h3>
-						{{ edu.content }}
-					</section>
-					{% endfor %}
-
-        </section>
-
-        <section id="technical-skills">
-          <h1>
-						<svg viewBox="0 0 16 16" class="bi bi-braces" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
-						</svg>
-						Technical skills
-					</h1>
-          <p>My skills profile is between software interfaces and scientific
-            knowledge (physics, mathematics) in modeling and rendering for
-            computer graphics. I have also been involved in web interfaces programming,
-            sometimes using well-known industry frameworks.
-          </p>
-					<br>
-					
-					{% for skill in site.data.skills %}
-					<section class="skill-item">
-						<h2>{{ skill.name }}</h2>
-						<div class="progress">
-							<div class="progress-bar v{{ skill.level }}" role="progressbar" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="7"></div>
-						</div>
-					</section>
-					{% endfor %}
-
-          <p>
-            This is just a quick overview. Feel free to ask me
-            for more details about any of these assets.
-          </p>
-
-        </section>
-
-        <section id="main-projects">
-          <h1>
-						<svg viewBox="0 0 16 16" class="bi bi-cpu-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5A1.5 1.5 0 0 0 5 6.5v3A1.5 1.5 0 0 0 6.5 11h3A1.5 1.5 0 0 0 11 9.5v-3A1.5 1.5 0 0 0 9.5 5h-3zm0 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
-						</svg>
-						Main projects
-					</h1>
-          <p>
-            These are mainly school and personal projects. Click on a project title for more details.
-          </p>
-
-					{% for project in site.projects reversed %}
-					<section class="project-item">
-						<h3><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
-						<div id="item{{forloop.index0}}" class="collapse">
-							{{ project.content }}
-						</div>
-					</section>
-					{% endfor %}
-
-        </section>
-      </main>
-    </div>
-  </div>
-
-  <!-- Scripts below -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+	{% for project in site.projects reversed %}
+	<section class="project-item">
+		<h3><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+		<div id="item{{forloop.index0}}" class="collapse">
+			{{ project.content }}
+		</div>
+	</section>
+	{% endfor %}
+</section>

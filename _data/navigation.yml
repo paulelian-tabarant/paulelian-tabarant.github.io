@@ -1,0 +1,14 @@
+- id: presentation
+  title: Presentation
+
+- id: experience
+  title: Experience
+
+- id: education
+  title: Education
+
+- id: skills
+  title: Skills
+
+- id: projects
+  title: Projects

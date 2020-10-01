@@ -1,0 +1,30 @@
+<nav class="navbar navbar-dark">
+	<a class="navbar-brand" href="#">{{ page.title }}</a>
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sectionsScrollspy">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse show" id="sectionsScrollspy">
+		<div id="responsive-profile-picture-adapter">
+			<div class="circled-profile-picture">
+				<a href="mailto:paul.tabarant@gmail.com">
+				<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+				</svg>
+				</a>
+			</div>
+		</div>
+		<h1 id="name">
+			Paul-Elian TABARANT
+		</h1>
+		<p>Research engineer in Computer Graphics and Virtual Reality</p>
+		<ul class="navbar-nav" id="sections-list">
+			{% for item in site.data.navigation %}
+			<li class="nav-item borderless">
+				<a class="nav-link" href="#{{item.id}}">{{ item.title }}</a>
+			</li>
+			{% endfor %}
+			<span id="terminal-dollar">$</span>
+		</ul>
+	</div>
+</nav>
