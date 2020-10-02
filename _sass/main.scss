@@ -32,6 +32,16 @@ h1, h2, h3, h4, h5, h6 {
 	.navbar-collapse {
 		margin-top: 5 * $default-margin;
 	}
+
+	.navbar-collapse, .navbar-nav {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	#responsive-profile-picture-adapter {
+		width: 75%;
+		align-self: center;
+	}
     
     .circled-profile-picture {
         width: 100%;
@@ -49,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
         #email-envelope {
             font-size: 2.5em;
         }
-    }
+	}
 
     @media only screen and (max-width: 767px) {
 		nav {
@@ -76,12 +86,9 @@ h1, h2, h3, h4, h5, h6 {
         .navbar {
             width: 100%;
             border: 0px;
-        }
-        .navbar-brand {
-            display: none;
 		}
-		.navbar-toggler {
-			display: none;
+        .navbar-brand, .navbar-toggler {
+            display: none;
 		}
     }
     

@@ -10,28 +10,6 @@ function select(id) {
     updateHash($( 'li > a.active' ).attr('href'));
 }
 
-class Cursor {
-    constructor(id, visibleTime, invisibleTime) {
-        this.selector = '#'+id;
-        this.visibleTime = visibleTime;
-        this.invisibleTime = invisibleTime;
-        this.visible = true;
-    }
-
-    blink() {
-        var cursor = this;
-        if(this.visible) {
-            $( this.selector ).css('background-color', 'white');
-            setTimeout(function() { cursor.blink(); }, this.visibleTime);
-        }
-        else {
-            $( this.selector ).css('background-color', 'transparent');
-            setTimeout(function() { cursor.blink(); }, this.invisibleTime);
-        }
-        this.visible = !this.visible;
-    }
-}
-
 function updateHash(hash) {
     if(history.pushState) {
         history.pushState(null, null, hash);
@@ -40,8 +18,6 @@ function updateHash(hash) {
         location.hash = hash;
     }
 }
-
-var cursor = new Cursor('terminal-cursor', 750, 450);
 
 $(function () {
     // Projects list animations
@@ -73,14 +49,11 @@ $(function () {
             }, 500);
         });
     });
-    // collapses navbar when clicked outside
-    $(document).click((event) => {
-        var clickover = $(event.target);
-        var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            $("button.navbar-toggle").click();
-        }
-    });
-    cursor.blink();
+	// collapses navbar when clicked
+	$(document).click(() => {
+		if ($(".navbar-collapse").hasClass("show")) {
+			$("a.navbar-toggler").click();
+		}
+	});
 });
 
