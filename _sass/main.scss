@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6 {
 #left-panel {
     position: fixed;
 	z-index: 2;
+
+	header {
+		font-size: 2em;
+		line-height: 1.0;
+	}
 	
 	.navbar-collapse {
 		margin-top: 5 * $default-margin;
@@ -87,9 +92,6 @@ h1, h2, h3, h4, h5, h6 {
             width: 100%;
             border: 0px;
 		}
-        .navbar-brand, .navbar-toggler {
-            display: none;
-		}
     }
     
     .borderless {
@@ -132,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 			color: $primary;
         }
 		li > a.nav-link.active::before {
-			content: ">>"
+			content: ">"
 		}
 		#terminal-dollar {
 			position: relative;
