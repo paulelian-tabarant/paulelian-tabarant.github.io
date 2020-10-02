@@ -27,10 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #left-panel {
     position: fixed;
-    z-index: 2;
+	z-index: 2;
+	
+	.navbar-collapse {
+		margin-top: 5 * $default-margin;
+	}
     
     .circled-profile-picture {
-        margin-top: 5 * $default-margin;
         width: 100%;
         height: 100%;
         padding-top: 100%;
@@ -50,7 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 
     @media only screen and (max-width: 767px) {
 		nav {
+			.navbar-toggler {
+				color: $primary;
+				font-size: x-large;
+			}
 			background-color: black;
+			opacity: 90%;
 		}
         #responsive-profile-picture-adapter {
             width: 30%;
@@ -161,14 +169,15 @@ h1, h2, h3, h4, h5, h6 {
 			padding: 5 * $default-margin;
 		}
 	}
-    p {
+    .text-section {
         color: $gray-200;
         margin-top: 2 * $default-margin;
         padding-left: 2 * $spacer;
-        border-left: 2px solid $primary;
-    }
-    img {
-        width: 100%;
+		border-left: 2px solid $primary;
+
+		img {
+			width: 100%;
+		}
     }
     .img-border {
         margin-top: 5 * $default-margin;
