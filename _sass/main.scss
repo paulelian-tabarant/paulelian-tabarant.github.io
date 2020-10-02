@@ -5,31 +5,33 @@
 
 $default-margin: 5px;
 
+// Global styling
+
 html {
 	scroll-behavior: smooth;
 }
-
 body {
-	position: relative;
-	color: white;
+	color: $secondary;
 }
-
 p {
     font-family: $font-family-sans-serif;
     font-size: medium;
 }
-
 code {
 	color: darken($primary, 20%);
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-serif;
+h1, h3, h5 {
+	font-family: $font-family-serif;
+	color: $primary;
+}
+h2, h4, h6 {
+	font-family: $font-family-serif;
+	color: $secondary;
 }
 
 // Left panel
 
-#left-panel {
+.left-panel {
     position: fixed;
 	z-index: 2;
 
@@ -47,9 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 		align-items: start;
 	}
 
-	#responsive-profile-picture-adapter {
-		width: 75%;
-		align-self: center;
+	.responsive-profile-picture-adapter {
+		width: 85%;
 	}
     
     .circled-profile-picture {
@@ -65,29 +66,19 @@ h1, h2, h3, h4, h5, h6 {
         //reducing resolution
         background-size: cover;
 
-        #email-envelope {
-            font-size: 2.5em;
+        .email-icon {
+            width: 3em;
         }
 	}
-
-    @media only screen and (max-width: 767px) {
-		nav {
-			.navbar-toggler {
-				color: $primary;
-				font-size: x-large;
-			}
-			background-color: black;
-			opacity: 90%;
-		}
-        #responsive-profile-picture-adapter {
-            width: 30%;
+	
+	// Nav styling for very large screen devices
+    @media only screen and (min-width:1000px) {
+        .responsive-profile-picture-adapter {
+            width: 50%;
             margin: 0 auto;
         }
-        #name {
-            display: none;
-        }
     }
-
+	// Nav styling for large screen devices
     @media only screen and (min-width: 767px) {
         display: flex;
         align-items: center;
@@ -97,31 +88,38 @@ h1, h2, h3, h4, h5, h6 {
             border: 0px;
 		}
     }
-    
-    .borderless {
-        border: 0 none;
-		background: none;
+	// Nav styling for small screen devices
+    @media only screen and (max-width: 767px) {
+		nav {
+			.navbar-toggler {
+				color: $primary;
+				font-size: x-large;
+			}
+			background-color: black;
+			opacity: 90%;
+		}
+        .responsive-profile-picture-adapter {
+            width: 30%;
+            margin: 0 auto;
+        }
+        header {
+            display: none;
+        }
 	}
-
+	// Nav styling for very small screen devices
     @media only screen and (max-height: 600px) {
         .circled-profile-picture {
             display: none;
         }
-    }
-
+	}
+	// Nav styling for extra small screen devices
     @media only screen and (max-height: 450px) {
-        #legend {
+        figcaption {
             display: none;
         }
-    }
-
-    @media only screen and (min-width:1000px) {
-        #responsive-profile-picture-adapter {
-            width: 50%;
-            margin: 0 auto;
-        }
-    }
-
+	}
+	
+	// Nav global styling
     nav {
         li > a.nav-link {
             padding-left: 0px;
@@ -140,28 +138,16 @@ h1, h2, h3, h4, h5, h6 {
 		li > a.nav-link.active::before {
 			content: ">"
 		}
-		#terminal-dollar {
-			position: relative;
-			color: white;
-			font-weight: bold;
-		}
-		
-		#terminal-cursor {
-			position: relative;
-			display: inline-block;
-			width: 10px;
-			height: 20px;
-			top: 1.5px;
-			margin-left: 10px;
-		}
     }
 }
 
 // Right panel
 
-#right-panel {
+.right-panel {
     margin-bottom: 16 * $default-margin;
-    z-index: 1;
+	z-index: 1;
+
+	// Increase padding on small screen devices
     @media only screen and (max-width:768px) {
         padding-left: 5 * $default-margin;
         padding-right: 5 * $default-margin;
@@ -177,10 +163,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	h3 {
 		font-size: $font-size-base * 1.2;
-		
-		.project-title {
-			padding: 5 * $default-margin;
-		}
+	}
+
+	.text-section-title {
+		color: $primary;
 	}
     .text-section {
         color: $gray-200;
@@ -201,12 +187,12 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 0px;
 	}
 
-	#skills {
-		section > h2 {
+	.skills-section {
+		.skills-category {
 			margin-top: 1.2 * $spacer;
 		}
 		.skill-item {
-			margin-bottom: 1.5 * $default-margin;
+			margin-bottom: 1.8 * $default-margin;
 		}
 
 		.progress {
@@ -235,13 +221,4 @@ h1, h2, h3, h4, h5, h6 {
 			}   
 		}
 	}
-
-    .project-item {
-		h3 {
-			margin: 2.0 * $default-margin 0px;
-		}
-		p {
-			margin-top: 0px;
-		}
-    }
 }
