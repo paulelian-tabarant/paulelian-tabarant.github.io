@@ -13,7 +13,6 @@ What I've learned to implement :
 
 - Basic OpenGL application architecture and components (context initialization, storage of geometry with buffers and attribute pointers, texture reading and mapping, objects drawing commands...)
 - Shadowing : calculation of an omnidirectional shadow map from a punctual light's position and objects in the 3D scene
-- Physics-based rendering of point and directional light reflections
 - [Screen-space ambient occlusion](https://en.wikipedia.org/wiki/Screen_space_ambient_occlusion)
 - Physics-based rendering using [BRDF](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function) implementations
 - [Image-based lighting](https://en.wikipedia.org/wiki/Image-based_lighting) thanks to 360° panoramic pictures from [this website](http://hdrlabs.com/sibl/archive.html)

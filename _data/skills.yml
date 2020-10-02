@@ -73,9 +73,13 @@
   type: tools
   level: 5
 
+- name: Linux Shell
+  type: tools
+  level: 6
+
 - name: MinGW (Mimalist GNU for Windows)
   type: tools
-  level: 4
+  level: 3
 
 - name: HTML5
   type: editing
