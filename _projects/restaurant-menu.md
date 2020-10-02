@@ -1,6 +1,5 @@
 ---
 date: 01-02-2018
-year: 2018
 title: Interactive restaurant menu
 ---
 

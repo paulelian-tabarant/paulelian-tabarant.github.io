@@ -1,0 +1,11 @@
+- name: languages
+  title: Programming languages
+
+- name: libraries
+  title: Frameworks and libraries
+
+- name: editing
+  title: Styling and editing
+
+- name: tools
+  title: Tools and environments

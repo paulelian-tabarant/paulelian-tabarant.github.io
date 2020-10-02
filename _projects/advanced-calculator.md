@@ -1,6 +1,5 @@
 ---
 date: 01-02-2015
-year: 2015
 title: Advanced calculator
 ---
 

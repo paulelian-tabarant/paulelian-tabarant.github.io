@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "https://paulelian-tabarant.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
+  - presentation
   - experience
   - education
   - projects
@@ -34,7 +35,7 @@ sass:
   # Tell Jekyll sass engine to produce a minified CSS file as output
   style: compressed
 
-gems:
+plugins:
   - jekyll-autoprefixer
 
 # Exclude from processing.

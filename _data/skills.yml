@@ -1,35 +1,82 @@
 - name: C/C++
+  type: languages
   level: 7
 
-- name: OpenGL
-  level: 5
-
 - name: Python
+  type: languages
   level: 3
 
 - name: Linux Bash
+  type: languages
   level: 5
 
-- name: LateX/Markdown
-  level: 4
-
-- name: Android
-  level: 3
-
 - name: Java
+  type: languages
   level: 3
-
-- name: JavaScript / jQuery
+- name: JavaScript
+  type: languages
   level: 4
+
+- name: PHP
+  type: languages
+  level: 3
 
 - name: CSS/Sass/Less
+  type: editing
   level: 4
 
+- name: LateX
+  type: editing
+  level: 3
+
+- name: Markdown
+  type: editing
+  level: 6
+
+- name: OpenGL
+  type: libraries
+  level: 6
+
+- name: Android
+  type: libraries
+  level: 3
+
 - name: Bootstrap
+  type: libraries
+  level: 5
+
+- name: jQuery
+  type: libraries
+  level: 5
+
+- name: Jekyll
+  type: libraries
   level: 4
 
 - name: Angular
+  type: libraries
+  level: 4
+
+- name: Ubuntu/Fedora
+  type: tools
+  level: 6
+
+- name: VS Code
+  type: tools
   level: 5
 
-- name: Git
+- name: Git CLI
+  type: tools
   level: 6
+
+- name: VIM
+  type: tools
+  level: 5
+
+- name: MinGW (Mimalist GNU for Windows)
+  type: tools
+  level: 4
+
+- name: HTML5
+  type: editing
+  level: 5
