@@ -56,10 +56,12 @@ h2, h4, h6 {
 			content: ">"
 		}
 	}
-
 	header {
 		font-size: 2em;
 		line-height: 1.0;
+	}
+	figcaption {
+		margin-top: 3 * $default-margin;
 	}
 	
 	.navbar-collapse {
@@ -93,13 +95,13 @@ h2, h4, h6 {
 				width: 3em;
 		}
 	}
-	
-	// Nav styling for very large screen devices
-	@media only screen and (min-width:1000px) {
+
+	@media only screen and (min-width: 1200px) {
 		.responsive-profile-picture-adapter {
 			width: 50%;
 		}
 	}
+	
 	// Nav styling for large screen devices
 	@media only screen and (min-width: 767px) {
 		margin-top: 5%;
@@ -124,6 +126,7 @@ h2, h4, h6 {
 		}
 		.responsive-profile-picture-adapter {
 			width: 30%;
+			margin: 0 auto;
 		}
 	}
 	// Nav styling for very small screen devices
