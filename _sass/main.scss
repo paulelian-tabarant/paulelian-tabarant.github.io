@@ -33,7 +33,6 @@ h2, h4, h6 {
 
 .left-panel {
 	position: fixed;
-	margin-top: 5%;
 	z-index: 2;
 	align-items: start;
 	
@@ -96,50 +95,48 @@ h2, h4, h6 {
 	}
 	
 	// Nav styling for very large screen devices
-    @media only screen and (min-width:1000px) {
-        .responsive-profile-picture-adapter {
-            width: 50%;
-            margin: 0 auto;
-        }
-    }
-	// Nav styling for large screen devices
-    @media only screen and (min-width: 767px) {
-        display: flex;
-        height: 100%;
-        .navbar {
-            width: 100%;
-            border: 0px;
+	@media only screen and (min-width:1000px) {
+		.responsive-profile-picture-adapter {
+			width: 50%;
 		}
-    }
+	}
+	// Nav styling for large screen devices
+	@media only screen and (min-width: 767px) {
+		margin-top: 5%;
+		display: flex;
+		height: 100%;
+		.navbar {
+			width: 100%;
+			border: 0px;
+		}
+	}
 	// Nav styling for small screen devices
-    @media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 767px) {
 		nav {
 			.navbar-toggler {
 				color: $primary;
 				font-size: x-large;
 			}
 			background-color: black;
-			opacity: 90%;
 		}
-        .responsive-profile-picture-adapter {
-            width: 30%;
-            margin: 0 auto;
-        }
-        header {
-            display: none;
-        }
+		header {
+			display: none;
+		}
+		.responsive-profile-picture-adapter {
+			width: 30%;
+		}
 	}
 	// Nav styling for very small screen devices
-    @media only screen and (max-height: 600px) {
-        .circled-profile-picture {
-            display: none;
-        }
+	@media only screen and (max-height: 600px) {
+		.circled-profile-picture {
+			display: none;
+		}
 	}
 	// Nav styling for extra small screen devices
-    @media only screen and (max-height: 450px) {
-        figcaption {
-            display: none;
-        }
+	@media only screen and (max-height: 450px) {
+		figcaption {
+			display: none;
+		}
 	}
 }
 
@@ -150,18 +147,18 @@ h2, h4, h6 {
 	z-index: 1;
 
 	// Increase padding on small screen devices
-    @media only screen and (max-width:768px) {
-        padding-left: 5 * $default-margin;
-        padding-right: 5 * $default-margin;
-    }
+	@media only screen and (max-width:768px) {
+		padding-left: 5 * $default-margin;
+		padding-right: 5 * $default-margin;
+	}
 
-    svg {
+	svg {
 		width: 1.1em;
 		height: 1.1em;
-    }
-    h1 {
-        margin-top: 15 * $default-margin;
-        color: $primary;
+	}
+	h1 {
+		margin-top: 15 * $default-margin;
+		color: $primary;
 	}
 	h3 {
 		font-size: $font-size-base * 1.2;
@@ -170,10 +167,10 @@ h2, h4, h6 {
 	.text-section-title {
 		color: $primary;
 	}
-    .text-section {
-        color: $gray-200;
-        margin-top: 2 * $default-margin;
-        padding-left: 2 * $spacer;
+	.text-section {
+		color: $gray-200;
+		margin-top: 2 * $default-margin;
+		padding-left: 2 * $spacer;
 		border-left: 2px solid $primary;
 		img {
 			width: 100%;
@@ -181,12 +178,12 @@ h2, h4, h6 {
 		li {
 			margin: 0.5 * $spacer 0;
 		}
-    }
-    .date {
-        color: $secondary;
-        left: - 5 * $default-margin;
-        margin-bottom: 0px;
-        padding-left: 0px;
+	}
+	.date {
+		color: $secondary;
+		left: - 5 * $default-margin;
+		margin-bottom: 0px;
+		padding-left: 0px;
 	}
 
 	.skills-section {
@@ -196,7 +193,6 @@ h2, h4, h6 {
 		.skill-item {
 			margin-bottom: 1.8 * $default-margin;
 		}
-
 		.progress {
 			height: 5px;
 			background-color: $gray-600;
