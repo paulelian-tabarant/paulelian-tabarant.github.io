@@ -1,6 +1,8 @@
 ---
-date: 01-09-2019
+date: 01/10/2020
 title: Photos hosting platform
 ---
 
-Apache server with php API, communicating with a mySQL database to retrieve album names and data from user accounts. Access to user accounts is made through an Angular web front-end displaying basic login prompts. The web client also contains pages to edit album names, photos and descriptions as well as a "view mode" in order to just load pictures from an album and let them be displayed automatically. Source code available at this [repository url](https://github.com/paulelian-tabarant/my-browser-photo-frame).
+Web-based application dedicated to personal pictures storage and sharing. Each user can create his own account, and then create and edit albums. Any user is able to consult an album if its owner has provided him its name and password. This allows fast album sharing between users.
+
+The application is based on a LAMP (Linux, Apache, MySQL, PHP) stack, with a web interface developed thanks to the Angular 9 framework. The source code is available on this [Github repository](https://github.com/paulelian-tabarant/my-browser-photo-frame).
