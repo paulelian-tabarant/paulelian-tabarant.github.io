@@ -7,7 +7,7 @@ Pôle Interaction, Réalité Virtuelle et Images, belonging to the CRIStAL lab (
 
 - Design and integration of a 3D shapes drawing tool based on mesh generation algorithms from my previous internship
 - Collision detection system, based on raycasting with acceleration structures ([octree](https://fr.wikipedia.org/wiki/Octree))
-- Generic material renderering from `.mtl` files, using the [Assimp](https://github.com/assimp/assimp) C++ library
+- Generic material rendering from `.mtl` files, using the [Assimp](https://github.com/assimp/assimp) C++ library
 - Basic data visualization module, with each element's shape computed directly inside the GPU thanks to geometry shaders
 - 3D buildings generation and rendering from [GeoJSON](https://geojson.org/) `Polygon` descriptions, for the project [UrbiViz](https://www.youtube.com/watch?v=0uibUiQkgwc)
 - Support during Pauline De Chalendar's project presentation at the exhibition [Experimenta 2020](https://www.experimenta.fr/), dedicated to art and science collaborations.

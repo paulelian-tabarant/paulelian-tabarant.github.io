@@ -237,6 +237,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
@@ -264,6 +266,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-autoprefixer
+  sassc
   therubyracer
   tzinfo (~> 1.2)
   tzinfo-data

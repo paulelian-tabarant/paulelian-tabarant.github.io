@@ -2,7 +2,7 @@
 date: 02-10-2020
 ---
 
-You’ve probably come to the right place if you are looking for a dedicated developer. I have been working on 3D computer graphics projects for more than two years and now wish to shift my developer career towards Full-Stack web programming.
+You’ve probably come to the right place if you are looking for a dedicated developer. I have been working on 3D computer graphics projects for more than two years and now wish to shift my developer career towards Full-Stack web development.
 
 ![Hellville harbour, in Nosy Be, Madagascar](/assets/img/hellville.jpg)
 
