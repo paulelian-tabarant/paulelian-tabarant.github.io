@@ -65,7 +65,7 @@ layout: main
 	{% for skill-type in site.data.skill-types %}
 	<section class="skills-category">
 		<h2>{{ skill-type.title }}</h2>
-		{% assign skills = site.data.skills | where:'type',{{skill-type.name}} %}
+		{% assign skills = site.data.skills | where:'type',"{{skill-type.name}}" %}
 		{% for skill in skills %}
 		<section class="skill-item">
 			{{ skill.name }}
