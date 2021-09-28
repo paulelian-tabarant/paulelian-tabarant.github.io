@@ -30,14 +30,6 @@ collections:
   - education
   - projects
 
-sass:
-  sass_dir: _sass
-  # Tell Jekyll sass engine to produce a minified CSS file as output
-  style: compressed
-
-plugins:
-  - jekyll-autoprefixer
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -54,7 +46,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
 #   - node_modules/
-#   - vendor/bundle/
+  - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+sass:
+  style: compressed

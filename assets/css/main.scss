@@ -1,6 +1,8 @@
-@import "variables";
-@import "../bootstrap/scss/bootstrap";
+---
+---
 
+@import '_variables';
+@import '../bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Serif+Pro');
 
 $default-margin: 5px;
