@@ -2,7 +2,7 @@
 date: 22-03-2021
 ---
 
-You’ve probably come to the right place if you are looking for a dedicated developer. I have been working on 3D computer graphics topics for more than two years and am now shifting my interests towards Fullstack web development. I am mainly interested in
+You’ve probably come to the right place if you are looking for a dedicated developer. I have been working in 3D Computer Graphics for two years and am now shifting my interests towards Fullstack web development. My main centers of interest are
 
 - Designing modular and reusable software;
 - Automating redundant (or simply boring) tasks;

@@ -28,7 +28,9 @@ collections:
   - presentation
   - experience
   - education
-  - projects
+  - academic_projects
+  - professional_projects
+  - side_projects
 
 # Exclude from processing.
 # The following items will not be processed, by default.

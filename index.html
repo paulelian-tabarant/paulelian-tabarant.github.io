@@ -89,7 +89,28 @@ layout: main
 	</h1>
 	<p>These are the most significant projects I've had the opportunity to work on, since 2014. Click on any project title below for more details.</p>
 
-	{% for project in site.projects reversed %}
+	<h2>Professional</h2>
+	{% for project in site.professional_projects reversed %}
+	<section>
+		<h3 class="text-section-title"><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+		<div id="item{{forloop.index0}}" class="text-section collapse">
+			{{ project.content }}
+		</div>
+	</section>
+	{% endfor %}
+
+	<h2>Academic</h2>
+	{% for project in site.academic_projects reversed %}
+	<section>
+		<h3 class="text-section-title"><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+		<div id="item{{forloop.index0}}" class="text-section collapse">
+			{{ project.content }}
+		</div>
+	</section>
+	{% endfor %}
+
+	<h2>Side projects</h2>
+	{% for project in site.side_projects reversed %}
 	<section>
 		<h3 class="text-section-title"><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
 		<div id="item{{forloop.index0}}" class="text-section collapse">
