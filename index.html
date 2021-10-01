@@ -27,7 +27,7 @@ layout: main
 	<section>
 		<h2 class="date"> {{ exp.period }}</h2>
 		<h3 class="text-section-title"><a href="#exp{{forloop.index0}}" data-toggle="collapse">{{ exp.title }}</a></h3>
-		<div id="exp{{forloop.index0}}" class="text-section collapse">
+		<div id="exp{{forloop.index0}}" class="text-section collapse{% if forloop.index0 == 0 %}.show{% endif %}">
 			{{ exp.content }}
 		</div>
 	</section>
@@ -92,8 +92,8 @@ layout: main
 	<h2>Professional</h2>
 	{% for project in site.professional_projects reversed %}
 	<section>
-		<h3 class="text-section-title"><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
-		<div id="item{{forloop.index0}}" class="text-section collapse">
+		<h3 class="text-section-title"><a href="#pro-item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+		<div id="pro-item{{forloop.index0}}" class="text-section collapse {% if forloop.index0 == 0 %}show{% endif %}">
 			{{ project.content }}
 		</div>
 	</section>
@@ -102,8 +102,8 @@ layout: main
 	<h2>Academic</h2>
 	{% for project in site.academic_projects reversed %}
 	<section>
-		<h3 class="text-section-title"><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
-		<div id="item{{forloop.index0}}" class="text-section collapse">
+		<h3 class="text-section-title"><a href="#academic-item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+		<div id="academic-item{{forloop.index0}}" class="text-section collapse">
 			{{ project.content }}
 		</div>
 	</section>
@@ -112,8 +112,8 @@ layout: main
 	<h2>Side projects</h2>
 	{% for project in site.side_projects reversed %}
 	<section>
-		<h3 class="text-section-title"><a href="#item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
-		<div id="item{{forloop.index0}}" class="text-section collapse">
+		<h3 class="text-section-title"><a href="#side-item{{forloop.index0}}" data-toggle="collapse">{{ project.title }}</a></h3>
+		<div id="side-item{{forloop.index0}}" class="text-section collapse">
 			{{ project.content }}
 		</div>
 	</section>
