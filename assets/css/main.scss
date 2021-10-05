@@ -170,6 +170,13 @@ h2, h4, h6 {
 		height: 5.0em;
 	}
 
+	.text-section-title > a::before {
+		content: '/ ';
+	}
+	.text-section-title > a.collapsed::before {
+		content: '| ';
+	}
+
 	.text-section-content {
 		color: $gray-200;
 		margin-top: 2 * $default-margin;
