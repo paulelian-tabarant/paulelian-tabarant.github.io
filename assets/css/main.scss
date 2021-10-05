@@ -15,15 +15,15 @@ html {
 body {
 	color: $secondary;
 }
-p {
+p, li {
     font-family: $font-family-sans-serif;
-    font-size: medium;
+    font-size: 14pt;
 }
 code {
 	color: darken($primary, 20%);
 }
 h1, h3, h5 {
-	font-family: $font-family-serif;
+	font-family: $font-family-sans-serif;
 	color: $primary;
 }
 h2, h4, h6 {
@@ -44,15 +44,14 @@ h2, h4, h6 {
 			padding-left: 0px;
 			padding-right: 0px;
 			background-color: transparent;
-			color: $secondary;
+			color: $primary;
 		}
 		li > a.nav-link.active {
 			padding-left: $default-margin;
 			background-color: transparent;
-			font-weight: bold;
+			font-weight: bolder;
 			font-size: x-large;
 			display: inline;
-			color: $primary;
 		}
 		li > a.nav-link.active::before {
 			content: ">"
@@ -151,6 +150,14 @@ h2, h4, h6 {
 	margin-bottom: 16 * $default-margin;
 	z-index: 1;
 
+	.level0-section {
+		margin-top: 15 * $default-margin;
+		header {
+			margin-bottom: 1em;
+			text-align: center;
+		}
+	}
+
 	// Increase padding on small screen devices
 	@media only screen and (max-width:768px) {
 		padding-left: 5 * $default-margin;
@@ -158,21 +165,12 @@ h2, h4, h6 {
 	}
 
 	svg {
-		width: 1.1em;
-		height: 1.1em;
-	}
-	h1 {
-		margin-top: 15 * $default-margin;
 		color: $primary;
-	}
-	h3 {
-		font-size: $font-size-base * 1.2;
+		width: 5.0em;
+		height: 5.0em;
 	}
 
-	.text-section-title {
-		color: $primary;
-	}
-	.text-section {
+	.text-section-content {
 		color: $gray-200;
 		margin-top: 2 * $default-margin;
 		padding-left: 2 * $spacer;

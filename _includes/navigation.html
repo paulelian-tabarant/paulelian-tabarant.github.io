@@ -2,7 +2,7 @@
 	<a class="navbar-brand navbar-toggler btn-block" href="" data-toggle="collapse" data-target="#nav-dropdown-content">{{ site.title }}</a>
 
 	<div class="collapse navbar-collapse" id="nav-dropdown-content">
-		<figure class="figure">
+		<header>
 			<div class="responsive-profile-picture-adapter">
 				<div class="circled-profile-picture">
 					<a href="mailto:{{ site.email }}">
@@ -12,11 +12,9 @@
 					</a>
 				</div>
 			</div>
-			<header>Paul-Elian TABARANT</header>
-			<figcaption>
-				{% include description.txt %}
-			</figcaption>
-		</figure>
+			<h1>Paul-Elian Tabarant</h1>
+			<p>{% include description.txt %}</p>
+		</header>
 		<ul class="navbar-nav" id="sections-list">
 			{% for item in site.data.navigation %}
 			<li class="nav-item">
