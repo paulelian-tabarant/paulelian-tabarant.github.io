@@ -2,6 +2,7 @@
 
 - [x] Voir comment aligner les PNG avec le texte des titres de section
 - [x] Faire des dropdown pour la partie Education
+- [ ] Ajouter des "category-section" pour espacer catégories de langages et de projets
 - [ ] Faire en sorte que les titres de section soit 'visiblement' cliquables
 - [ ] Changer police des titres de section, paragraphes
 - [ ] Améliorer rendu de list items (points blancs bof bof)
