@@ -54,7 +54,7 @@
   type: libraries
   level: 1
 
-- name: TypeScript (add version number)
+- name: TypeScript 4.2
   type: languages
   level: 2
 
