@@ -7,4 +7,6 @@ Part of a team of two developers, assisting the artist Pauline De Chalendar on [
 
 I have then embedded the drawing tool inside PIRVI's 3D engine. We've also added some other features like replaying the whole drawing process programmatically, or inserting "camouflage" shapes to hide some 3D objects in specific contexts (observer's position and gaze direction). Other tools are needed for the editing process, like the possibility of splitting a drawing session into different file outputs. It allows Pauline to define different phases when animating the drawing.
 
+You can read the shapes drawing feature documentation [here](assets/pdf/shapes-drawing.pdf).
+
 Technologies : C++11, OpenGL4, GLSL, Python 2.7

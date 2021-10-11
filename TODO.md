@@ -4,7 +4,7 @@
 - [x] Faire des dropdown pour la partie Education
 - [x] Faire en sorte que les titres de section soit 'visiblement' cliquables
 - [x] Ajouter des "category-section" pour espacer catégories de langages et de projets
-- [ ] Rajouter les technos dans la section Projects
+- [x] Rajouter les technos dans la section Projects et PDF de shapes drawing (doc)
 - [ ] Voir pour d'autres polices de titres de section, paragraphes
 - [ ] Améliorer rendu de list items (points blancs bof bof)
 - [ ] Étudier d'autres combinaisons de couleurs ?

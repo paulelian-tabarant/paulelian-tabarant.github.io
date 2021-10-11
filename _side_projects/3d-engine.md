@@ -18,3 +18,5 @@ What I've learned to implement :
 - [Image-based lighting](https://en.wikipedia.org/wiki/Image-based_lighting) thanks to 360° panoramic pictures from [this website](http://hdrlabs.com/sibl/archive.html)
 
 ![Image-based lighting on a Batman model](assets/img/batman.jpg)
+
+Technologies : C++11, OpenGL 3.3, GLSL, Assimp library
