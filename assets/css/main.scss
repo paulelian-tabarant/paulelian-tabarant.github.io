@@ -28,6 +28,9 @@ h1, h3, h5 {
 h2, h4, h6 {
 	color: $secondary;
 }
+ul {
+	list-style-type: '> ';
+}
 
 // Left panel
 

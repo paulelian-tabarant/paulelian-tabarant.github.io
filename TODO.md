@@ -5,7 +5,7 @@
 - [x] Faire en sorte que les titres de section soit 'visiblement' cliquables
 - [x] Ajouter des "category-section" pour espacer catégories de langages et de projets
 - [x] Rajouter les technos dans la section Projects et PDF de shapes drawing (doc)
-- [ ] Voir pour d'autres polices de titres de section, paragraphes
+- [x] Voir pour d'autres polices de titres de section, paragraphes
 - [ ] Améliorer rendu de list items (points blancs bof bof)
 - [ ] Étudier d'autres combinaisons de couleurs ?
 - [ ] Régler petit bug d'affichage quand on dévoile un text-section-content : bordure qui s'agrandit puis se réduit brutalement
