@@ -7,4 +7,4 @@ I started engaging in learning a bit more about front-end web development during
 
 Sections of the website (Presentation, Experience, Projects and Skills) are stored inside static files (`.yml` for skills, and `Markdown` for others) and inserted inside the main page using `Liquid` templating language and some filters. The website is deployed on Github pages using [Jekyll](https://jekyllrb.com).
 
-Technologies : Jekyll 3.9, Bootstrap 4, Liquid, Sass, Markdown
+Technologies : Jekyll 3.9, Bootstrap 4, Liquid, Sass, Markdown 
