@@ -36,14 +36,20 @@ ul {
 // Left panel
 
 .left-panel {
+	display: flex;
 	position: fixed;
 	z-index: 2;
-	align-items: start;
+	align-items: center;
+	height: 100%;
+	opacity: 90%;
 	
 	// Nav global styling
 	nav {
 		display: flex;
-		flex-direction: column;
+
+		ul {
+			width: 100%;
+		}
 
 		li > a.nav-link {
 			padding-left: 0px;
@@ -93,39 +99,48 @@ ul {
 		width: 50%;
 		height: 50%;
 	}
-	
-	.navbar-collapse {
-		align-items: start;
-		margin-top: 5 * $default-margin;
-	}
 
-	.navbar-collapse, .navbar-nav {
-		max-width: 100%;
-		flex-direction: column;
+	@media only screen and (min-width: 576px) {
+		.navbar-collapse, .navbar-nav {
+			max-width: 100%;
+			flex-direction: column;
+		}
 	}
 	
 	// Nav styling for large screen devices
 	@media only screen and (min-width: 767px) {
-		margin-top: 5%;
-		display: flex;
-		height: 100%;
 		.navbar {
-			width: 100%;
 			border: 0px;
 		}
 	}
 
 	// Nav styling for small screen devices
 	@media only screen and (max-width: 576px) {
+		align-items: flex-start;
 		nav {
+			width: 100%;
 			.navbar-toggler {
 				color: $primary;
 				font-size: x-large;
+				text-align: center;
 			}
 			background-color: black;
+
+			ul {
+				display: inline-block;
+				justify-content: center;
+				li > a {
+					display: inline-block;
+				}
+			}
 		}
 		header > h1 {
 			display: none;
+		}
+	
+		.navbar-collapse {
+			align-items: start;
+			margin-top: 5 * $default-margin;
 		}
 	}
 }
