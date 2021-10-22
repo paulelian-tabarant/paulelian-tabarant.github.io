@@ -8,7 +8,8 @@
 - [x] Voir pour d'autres polices de titres de section, paragraphes
 - [x] Améliorer rendu de list items (points blancs bof bof)
 - [x] Placer photo de profil dans section Presentation
-- [ ] Aligner icône de mail à côté de la description sur panel gauche
+- [x] Aligner icône de mail à côté de la description sur panel gauche
+- [x] Régler petit pb d'affichage transitoire sur titre et email quand developpement navbar sur mobile
 - [ ] Étudier d'autres combinaisons de couleurs ?
 - [ ] Régler petit bug d'affichage quand on dévoile un text-section-content : bordure qui s'agrandit puis se réduit brutalement
 - [ ] Gérer responsiveness navbar avec écrans larges mais hauteur faible (Mac par exemple)
