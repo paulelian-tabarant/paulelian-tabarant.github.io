@@ -7,4 +7,4 @@ A web-based application for the exploration of [hyperbolic spaces](https://en.wi
 
 I was part of a pair with one of my PIRVI colleagues for this project.
 
-Technologies : ThreeJS, JavaScript ES6, GLSL
+`Technologies : ThreeJS, JavaScript ES6, GLSL`

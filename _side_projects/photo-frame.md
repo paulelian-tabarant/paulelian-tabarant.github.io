@@ -7,4 +7,4 @@ Web-based application dedicated to personal pictures storage and sharing. Each u
 
 The application is based on a LAMP stack, with a web interface developed thanks to the Angular 9 framework. The source code is available on this [Github repository](https://github.com/paulelian-tabarant/my-browser-photo-frame). You can also use the platform on [this server](http://51.178.136.146/).
 
-Technologies : Angular 9, Apache HTTP server, MySQL, PHP 7.2
+`Technologies : Angular 9, Apache HTTP server, MySQL, PHP 7.2`

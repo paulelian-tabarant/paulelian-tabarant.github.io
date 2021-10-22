@@ -17,4 +17,4 @@ At the end, each user was offered a complete recap, with a graph of the evolutio
 
 I was responsible of the development of the Android client application. Code is available on this [Github repository](https://github.com/paulelian-tabarant/lastnight-app).
 
-Technologies : Android 7
+`Technologies : Android 7`

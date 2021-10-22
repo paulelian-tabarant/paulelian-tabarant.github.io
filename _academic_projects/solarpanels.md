@@ -7,4 +7,4 @@ A project involving my whole class group (28 students). The final goal was to cr
 
 Feel free to download the whole report from [this link](assets/pdf/projet-solaire.pdf)
 
-Technologies : C
+`Technologies : C`

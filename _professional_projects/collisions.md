@@ -9,4 +9,4 @@ It was used for projects using pointing interactions to select or move objects i
 
 You can find more information about this feature on its [corresponding documentation](assets/pdf/colliders.pdf).
 
-Technologies : C++11
+`Technologies : C++11`

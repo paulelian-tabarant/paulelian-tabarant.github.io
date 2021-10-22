@@ -7,4 +7,4 @@ A tablet web-based application for the annotation of 3D models. It is intended f
 
 I was responsible of the development of the tablet drawing interface, with basic options (color, lines thickness) and navigation around the model.
 
-Technologies : Webpack, ThreeJS, JavaScript ES6
+`Technologies : Webpack, ThreeJS, JavaScript ES6`

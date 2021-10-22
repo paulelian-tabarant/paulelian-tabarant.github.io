@@ -19,4 +19,4 @@ What I've learned to implement :
 
 ![Image-based lighting on a Batman model](assets/img/batman.jpg)
 
-Technologies : C++11, OpenGL 3.3, GLSL, Assimp library
+`Technologies : C++11, OpenGL 3.3, GLSL, Assimp library`

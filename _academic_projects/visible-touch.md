@@ -7,4 +7,4 @@ Development of a system responsible of prototyping frame animations on wearable 
 
 Check our [source code](https://github.com/paulelian-tabarant/visible_touch) or get more details from [here](assets/pdf/igr205-presentation.pdf).
 
-Technologies : React 16, Node, TypeScript, JavaScript
+`Technologies : React 16, Node, TypeScript, JavaScript`

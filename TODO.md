@@ -10,6 +10,7 @@
 - [x] Placer photo de profil dans section Presentation
 - [x] Aligner icône de mail à côté de la description sur panel gauche
 - [x] Régler petit pb d'affichage transitoire sur titre et email quand developpement navbar sur mobile
+- [ ] Changer formatage 'technologies' dans les projets (mode code)
 - [ ] Étudier d'autres combinaisons de couleurs ?
 - [ ] Régler petit bug d'affichage quand on dévoile un text-section-content : bordure qui s'agrandit puis se réduit brutalement
 - [ ] Gérer responsiveness navbar avec écrans larges mais hauteur faible (Mac par exemple)
