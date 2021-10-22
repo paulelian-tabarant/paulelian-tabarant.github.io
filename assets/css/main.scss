@@ -3,8 +3,7 @@
 
 @import 'variables';
 @import '../bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Noto+Serif+Display&display=swap');
 
 $default-margin: 5px;
 
@@ -14,19 +13,6 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	color: $secondary;
-}
-
-p, li {
-    font-size: 12pt;
-}
-code {
-	color: darken($primary, 20%);
-}
-h1, h3, h5 {
-	color: $primary;
-}
-h2, h4, h6 {
 	color: $secondary;
 }
 ul {
@@ -40,13 +26,11 @@ ul {
 	position: fixed;
 	z-index: 2;
 	align-items: center;
-	height: 100%;
 	opacity: 90%;
-	
+
 	// Nav global styling
 	nav {
 		display: flex;
-
 		ul {
 			width: 100%;
 		}
@@ -101,6 +85,7 @@ ul {
 	}
 
 	@media only screen and (min-width: 576px) {
+		height: 100%;
 		.navbar-collapse, .navbar-nav {
 			max-width: 100%;
 			flex-direction: column;
@@ -148,6 +133,23 @@ ul {
 // Right panel
 
 .right-panel {
+	p, li {
+		font-family: $font-family-sans-serif;
+		font-size: 12pt;
+	}
+	code {
+		color: darken($primary, 20%);
+	}
+	h1, h2 {
+		font-family: $font-family-serif;
+	}
+	h1, h3, h5 {
+		color: $primary;
+	}
+	h2, h4, h6 {
+		font-family: $font-family-serif;
+		color: $secondary;
+	}
 
 	.responsive-profile-picture-adapter {
 		display: inline-block;

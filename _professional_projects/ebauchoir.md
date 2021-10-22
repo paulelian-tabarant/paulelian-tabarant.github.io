@@ -9,4 +9,4 @@ I have then embedded the drawing tool inside PIRVI's 3D engine. We've also added
 
 You can read the shapes drawing feature documentation [here](assets/pdf/shapes-drawing.pdf).
 
-`Technologies : C++11, OpenGL4, GLSL, Python 2.7`
+`Technologies : C++11, OpenGL4, GLSL, Python 2.7, Eigen library`

@@ -1,5 +1,5 @@
 // Bootstrap's default CSS sheets overridden here
-$primary:         #ffc87c;
+$primary:         #ffc87c; 
 $secondary:		  #ffffff;
 
 //## Settings for some of the most global styles.
@@ -12,10 +12,10 @@ $link-color:            $primary;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
-$link-hover-decoration: underline;
+$link-hover-decoration: none;
 
-$font-family-sans-serif:  "Rubik", sans serif;
-$font-family-serif:       "Source Serif Pro", serif;
+$font-family-sans-serif:  "Andada Pro", sans serif;
+$font-family-serif:       "Noto Serif Display", serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
